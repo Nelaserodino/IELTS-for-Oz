@@ -1,0 +1,770 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-family: 'Gilroy-Heavy', sans-serif;
+    font-family: 'Gilroy-Light', sans-serif;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+/* INDEX - HEADER*/
+
+#header{
+    margin: 10px;
+    background-color: white;
+    padding: 0 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+.header__logo a {
+    text-transform: uppercase;
+    font-family: 'Gilroy-Heavy', sans-serif;
+    letter-spacing: 1px;
+    color: #02CDD0;
+    font-size: 1.5rem;
+    transition: 0.4s;
+}
+
+.header__menu{
+    display: flex;
+    padding: 0 0.62rem;
+    transition: 0.4s;
+}
+
+
+.header__link {
+    padding: 0.9rem;
+    font-family: 'Gilroy-Bold', sans-serif;
+    color: #291B44;
+    font-size: 1.3rem;
+    transition: 0.4s;
+
+}
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 1.87rem;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.header__menu :hover,
+.header__link :hover,
+.mostrar-menu :hover,
+.esconder-menu:hover{
+    color: #02CDD0;
+}
+
+.header__logo :hover{
+    color: #291B44;
+}
+
+#check {
+     display: none;
+ }
+/*INDEX - MAIN*/
+
+.index-container{
+    display: grid;
+    grid-template-areas:
+                        " banner banner banner"
+                        ". descripcion ."
+                        ". sobreMi . "
+                        ". testimonio .";
+                    
+    grid-template-columns: 5% 90% 5%;
+    row-gap: 3.5rem;
+    
+}
+
+
+#banner{
+    grid-area: banner;
+}
+
+#descripcion{
+    grid-area: descripcion;
+}
+
+#sobreMi{
+    grid-area: sobreMi;
+}
+#testimonio{
+    grid-area: testimonio;
+}
+
+#banner{
+    padding: 17rem 3rem;
+    display: flex;
+    justify-content: center;
+    background-image: url(./img/pexels-rebecca-kate-4604963.jpg);
+    background-size: cover;
+}
+
+.contenido__banner {
+    color: #291B44;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido__banner h1, span {
+    font-size: 4rem;
+    padding: 1.25rem 0; 
+    font-family: 'Gilroy-Bold', sans-serif;  
+    letter-spacing: 3px;
+    
+}
+
+.contenido__banner span{
+    color: #ffffff;
+}
+
+.contenido__banner h2{
+    font-size: 1.8rem;
+    font-family: 'Gilroy-Bold', sans-serif;  
+    text-align: right;
+}
+
+
+#descripcion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-img__descripcion img{
+    width: 34.5rem;
+    padding-right: 0.25rem;
+}
+
+.contenedor-texto__descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #291B44;
+}
+
+.contenedor-texto__descripcion h2{
+    font-family: 'Gilroy-Bold', sans-serif;  
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+.contenedor-texto__descripcion span{
+    color: #02CDD0;
+    font-size: 2rem;
+}
+
+.contenedor-texto__descripcion p{
+    font-family: 'Gilroy-Regular', sans-serif;  
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    padding: 1.25rem 0;
+}
+
+.contenido__btn{
+    background-color: #291b44;
+    color:white;
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1%;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    left: 25%;
+    transition: all 0.7s;
+    
+}
+
+.contenido__btn:hover{
+    background-color: #02CDD0;
+    width: 50%;
+    left: 15%;
+}
+
+#sobreMi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-descripcion__sobreMi{
+    color: #291B44;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contenedor-descripcion__sobreMi h4{
+    font-family: 'Gilroy-Bold', sans-serif;  
+    letter-spacing: 2px;
+    font-size: 2rem;
+    color: #291B44;
+    padding-bottom: 1.25rem;
+}
+
+.contenedor-descripcion__sobreMi span{
+    color: #02CDD0;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+.contenedor-descripcion__sobreMi p{
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+.contenedor-img__SobreMi img{
+    width: 21.8rem;
+    border-radius: 50%;
+}
+
+#testimonio h3{
+    font-family: 'Gilroy-Bold', sans-serif;  
+    letter-spacing: 1px;
+    font-size: 2rem;
+    color: #291B44;
+    text-align: center;
+    padding: 2rem;
+}
+#testimonio span{
+    color: #02CDD0;
+    font-size: 2rem;
+}
+
+.contenedor__grid{
+    display: grid;
+    grid-template-rows: repeat(4,auto);
+    grid-template-columns: repeat(2, auto);
+    justify-items: center;
+    row-gap: 3rem;  
+}
+
+.contenedor__testimonio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border:1px solid #291B44;
+    border-radius: 5%;
+    width: 60%;
+    background-color: #f3f1f1;
+}
+.contenedor__testimonio p{
+    font-size: 1.1rem;
+}
+
+.foto__testimonio{
+    width: 6rem;
+    border-radius: 50%;
+}
+.estrellas__testimonio{
+    width: 6rem;
+}
+
+
+/*FOOTER*/
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    font-size: 1.4rem;
+    margin: 3rem;  
+    border-top: 1px solid #291B44 ;
+}
+
+
+.contenedor-instagram, .contenedor-email{
+    display: flex;
+    align-items: center;
+    margin: 0.3rem;  
+}
+
+#footer h4 {
+    font-family: 'Gilroy-Bold', sans-serif;
+    color: #291B44;
+    font-size: 1.4rem;
+    margin: 0.6rem;
+}
+
+
+
+
+/*IELTS*/
+.IELTS-container{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-areas: ". IELTS-container__banner ."
+                         ". iconos ."
+                        ". listening ."
+                        ". reading ."
+                        ". writing ."
+                        ". speaking .";
+    grid-template-columns: 15% 70% 15%;
+    justify-items: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+.IELTS-container__banner{
+    grid-area: IELTS-container__banner;
+    font-family: 'Gilroy-Regular', sans-serif; 
+    color: #291B44;
+    padding: 1.25rem 0;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+.IELTS-container__banner span{
+    color: #00C8CC;
+    font-size: 4rem;
+}
+.IELTS-container__banner p{
+    padding: 1rem 0;
+}
+.iconos{
+   width: 100%;
+    grid-area: iconos;
+    display: flex;  
+    justify-content: space-around;
+    
+}
+.iconos img{
+    width: 7rem;
+}
+.listening{
+    grid-area: listening;
+}
+.reading{
+    grid-area: reading;
+}
+.writing{
+    grid-area: writing;
+}
+.speaking{
+    grid-area: speaking;
+}
+.listening p, .reading p, .writing p, .speaking  p{
+    font-size: 1rem;
+    color: #291B44;
+}
+.listening h2, .reading h2, .writing h2, .speaking  h2{
+   color: #00C8CC;
+   border-top: 1px solid #291B44 ;
+   line-height: 3rem;
+   margin: 1rem 0;
+}
+.listening h3, .reading h3, .writing h3, .speaking  h3{
+    font-style: italic;
+    margin: 1rem 0;
+}
+
+/*WORKING HOLIDAY*/
+.WH-container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-areas: ". WH-container__banner."
+                         ". requisitos ."
+                         ". idiomas .";
+    grid-template-columns: 15% 70% 15%;
+    justify-items: center;
+    row-gap: 2rem;
+}
+
+.WH-container__banner {
+        grid-area: WH-container__banner;
+        font-family: 'Gilroy-Regular', sans-serif; 
+        color: #291B44;
+        padding: 1.25rem 0;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+    }
+.WH-container__banner span{
+        color: #00C8CC;
+        font-size: 4rem;
+    }
+
+.WH-container__requisitos{
+    grid-area: requisitos;
+}
+.WH-container__idiomas{
+    grid-area: idiomas;
+}
+
+/*TARIFAS*/
+.tarifas-container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-areas: ". banner banner ."
+                         ". curso1 curso2 ."
+                         ". curso3 curso4 .";
+    grid-template-columns: 10% 40% 40% 10%;
+    justify-items: center;
+    row-gap: 3rem;
+    column-gap: 1rem;
+}
+
+.tarifas-container__banner{
+    grid-area: banner;
+    font-family: 'Gilroy-Regular', sans-serif; 
+    color: #291B44;
+    padding: 1.25rem 0;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+.tarifas-container__banner span{
+    color: #00C8CC;
+    font-size: 4rem;
+}
+
+.curso1{
+    grid-area: curso1;
+}
+.curso2{
+    grid-area: curso2;
+}
+.curso3{
+    grid-area: curso3;
+}
+.curso4{
+    grid-area: curso4;
+}
+
+/*CONTACTO*/
+
+.formulario h4{
+    font-family: 'Gilroy-Bold', sans-serif;  
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+    color: #291B44;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.formulario p{
+    font-family: 'Gilroy-Regular', sans-serif;  
+    letter-spacing: 1px;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: #291B44;
+}
+
+.formulario-datos {
+    padding: 2rem 8rem;
+    display: grid;
+    grid-template-areas: ". nombre telefono ."
+                        ". mensaje mensaje ."
+                        ". btn btn .";
+}
+
+.nombre{
+    grid-area: nombre;
+    padding: 1rem;
+}
+.telefono{
+    grid-area: telefono;
+    padding: 1rem;
+}
+.mensaje{
+    grid-area: mensaje;
+    padding: 1rem;   
+}
+.btn {
+    grid-area: btn;
+    padding: 1rem;
+    text-decoration: none;
+    width: 30%;
+    text-align: center;
+    transition: all 0.7s; 
+    
+}
+
+.formulario-datos label {
+    font-family: 'Gilroy-Regular', sans-serif;  
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: #291B44;
+}
+
+.formulario-datos textarea, input, button{
+    width: 100%;
+    border: 1px solid #291B44;
+    border-radius: 0.5rem;
+    background-color: #00C8CC;
+    font-family: 'Gilroy-Medium', sans-serif;  
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    padding-left: 0.3rem; 
+    color: #291B44;
+} 
+
+
+.formulario-datos button:hover{
+    background-color: #02CDD0;
+}
+
+
+
+/*celular*/
+@media only screen and (max-width:480px){
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    #header{
+        padding: 20px 50px;
+    }
+
+    .header__menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #c5f0f0;
+       right: -100%;
+       top: 0;
+       text-align: center;
+       padding: 100px 0px;
+       z-index: 100;
+       transition: 0.8s;
+       display: block;
+    }
+
+    .header__link{
+        padding: 20px;
+        display: block;   
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+   #check:checked ~ .header__menu{
+        right: 0;
+    }
+    #banner{
+        padding: 5rem 1rem;
+    }
+
+    .contenido__banner h1, span {
+        font-size: 2rem;        
+    }
+    
+    .contenido__banner h2{
+        font-size: 1.8rem;
+    }
+
+    #descripcion{
+        flex-direction: column;
+        text-align: left;
+    }
+
+    #sobreMi{
+        flex-direction: column-reverse;
+    }
+    #sobreMi img{
+        width: 8rem;
+    }
+    .contenedor-img__descripcion img{
+        width: 10rem;
+    }
+    .contenedor-texto__descripcion h2,
+    .contenedor-texto__descripcion span,
+    .contenedor-descripcion__sobreMi h4,
+    .contenedor-descripcion__sobreMi span{
+        font-size: 1.4rem;
+    }
+
+    .contenedor-texto__descripcion p,
+    .contenedor-descripcion__sobreMi p{
+        font-size: 1rem;
+    }
+
+    .contenido__btn{
+        left: 0;
+        padding: 10px;
+        font-size: 1rem;
+        width: 70%;
+    }
+
+    #testimonio h3, 
+    #testimonio span{
+        flex-direction: column;
+        font-size: 1.4rem;
+    }
+    .contenedor__grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor__testimonio{
+    width: 100%;
+    }
+    .contenedor__testimonio p{
+        font-size: 1rem;
+    }
+    .foto__testimonio{
+        width: 3rem;
+    }
+    .estrellas__testimonio{
+        width: 3rem;
+    }
+    .IELTS-container{
+        grid-template-columns:5% 90% 5% ;
+        row-gap: 2rem;
+    }
+    .IELTS-container__banner, 
+    .WH-container__banner,
+    .tarifas-container__banner{
+        font-size: 1rem;
+    }
+    .IELTS-container__banner span,
+    .WH-container__banner span,
+    .tarifas-container__banner span{
+        font-size: 2rem;
+    }
+    .tarifas-container{
+        grid-template-columns: 5% 45% 45% 5%;
+    }
+     .iconos img{
+        width: 3rem;
+    }
+    .listening p, .reading p, .writing p, .speaking  p{
+        font-size: 0.8rem;
+    }
+    .formulario-datos {
+        padding: 2rem 0;
+        display: grid;
+        grid-template-areas: ". nombre telefono ."
+                            ". mensaje mensaje ."
+                            ". btn btn .";
+    }
+   
+    .btn{
+        width: 50%;
+    }
+}
+
+/*tablet*/
+@media only screen and (min-width:481px) and (max-width:1023px) {
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .header__menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #c5f0f0;
+       right: -100%;
+       top: 0;
+       text-align: center;
+       padding: 100px 0px;
+       z-index: 100;
+       transition: 0.8s;
+       display: block;
+    }
+
+    .header__link{
+        padding: 20px;
+        display: block;   
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+   #check:checked ~ .header__menu{
+        right: 0;
+    }.contenido__banner h1, span {
+        font-size: 3rem;        
+    }
+    
+    .contenido__banner h2{
+        font-size: 1.8rem;
+    }
+
+    #descripcion{
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 0;
+    }
+    .contenedor-img__descripcion img{
+        width: 21rem;
+        padding-right: 0.25rem;
+    }
+
+    .contenido__btn{
+        left: 25%;
+        padding: 20px;
+        font-size: 24px;
+        width: 50%;
+    }
+
+    #sobreMi{
+        flex-direction: column-reverse;
+        padding: 30px 0;
+    }
+    .contenedor-img__SobreMi{
+        padding-bottom: 20px;
+    }
+    #testimonio{
+        flex-direction: column;
+    }
+    .contenedor__grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor__testimonio{
+    width: 100%;
+    }
+    .formulario-datos {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-areas: ". nombre telefono ."
+                        ". mensaje mensaje ."
+                        ". btn btn .";
+    }
+    .iconos img{
+        width: 4.8rem;  
+    }
+
+    .btn{
+        width: 50%;
+    }
+}
+
+
+
+
+/*compu*/
+@media only screen and (min-width:1024px){
+    
+}
