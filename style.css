@@ -311,82 +311,27 @@
 
 
 /*IELTS*/
-.IELTS-container{
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-areas: ". IELTS-container__banner ."
-                         ". iconos ."
-                        ". listening ."
-                        ". reading ."
-                        ". writing ."
-                        ". speaking .";
-    grid-template-columns: 15% 70% 15%;
-    justify-items: center;
-    align-items: center;
-    row-gap: 2rem;
+.card-img-top{
+    width: 40%;
 }
-.IELTS-container__banner{
-    grid-area: IELTS-container__banner;
-    font-family: 'Gilroy-Regular', sans-serif; 
+.card-title{
+    font-family: 'Gilroy-Bold', sans-serif;
     color: #291B44;
-    padding: 1.25rem 0;
-    letter-spacing: 2px;
-    font-size: 1.5rem;
-}
-.IELTS-container__banner span{
-    color: #00C8CC;
-    font-size: 4rem;
-}
-.IELTS-container__banner p{
-    padding: 1rem 0;
-}
-.iconos{
-   width: 100%;
-    grid-area: iconos;
-    display: flex;  
-    justify-content: space-around;
-    
-}
-.iconos img{
-    width: 7rem;
-}
-.listening{
-    grid-area: listening;
-}
-.reading{
-    grid-area: reading;
-}
-.writing{
-    grid-area: writing;
-}
-.speaking{
-    grid-area: speaking;
-}
-.listening p, .reading p, .writing p, .speaking  p{
-    font-size: 1rem;
-    color: #291B44;
-}
-.listening h2, .reading h2, .writing h2, .speaking  h2{
-   color: #00C8CC;
-   border-top: 1px solid #291B44 ;
-   line-height: 3rem;
-   margin: 1rem 0;
-}
-.listening h3, .reading h3, .writing h3, .speaking  h3{
-    font-style: italic;
-    margin: 1rem 0;
+    font-size: 2rem;
 }
 
-/*WORKING HOLIDAY*/
-.WH-container p{
+
+/*IELTS, WORKING HOLIDAY titulo*/
+.container p{
     margin: 2rem 0;
+    font-size: 1.2rem;
 }
-.WH-container h1{
+.container h1{
     color: #291B44;
     margin: 2rem 0;
+    text-align: center;
 }
-.WH-container span{
+.container span{
     color: #00C8CC;
 }
 
@@ -619,9 +564,7 @@
      .iconos img{
         width: 3rem;
     }
-    .listening p, .reading p, .writing p, .speaking  p{
-        font-size: 0.8rem;
-    }
+    
     
 }
 
@@ -694,11 +637,7 @@
     #testimonio{
         flex-direction: column;
     }
-    .contenedor__grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    
     .contenedor__testimonio{
     width: 100%;
     }

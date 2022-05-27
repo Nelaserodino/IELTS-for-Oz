@@ -28,27 +28,29 @@
             </nav>
     </header>
 
-    <div class="contacto-container m-5">
-        <div class="row formulario">
-            <h4>¿Necesitas más información?</h4>
-            <p>Drop me a line! Te contestaré as quick as lightning!</p>           
+    <div class="contacto-container d-flex flex-column align-items-center">
+        <div class="col-8">
+            <div class="row formulario">
+                <h4>¿Necesitas más información?</h4>
+                <p>Drop me a line! Te contestaré as quick as lightning!</p>           
+            </div>
+            <div class="row">
+                    <div class=" col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    </div>
+                  
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                          <input type="email" class="form-control" id="floatingInput" placeholder="E-mail" >
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                          <textarea class="form-control" placeholder="Mensaje" id="floatingTextarea"></textarea>
+                    </div>
+                    <div class="col mb-3">
+                          <button  class="form-control btn text-start" type="submit">ENVIAR</button>
+                    </div>
+            </div>
         </div>
-        <div class="row">
-            <div class=" col-sm-12 col-md-6 col-lg-6 col-xl-6 p-4 ">
-                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-            </div>
-            
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 p-4 ">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="E-mail" >
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 p-4 ">
-                    <textarea class="form-control" placeholder="Mensaje" id="floatingTextarea"></textarea>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 p-4">
-                    <button  class="form-control btn" type="submit">ENVIAR</button>
-            </div>
-            </div>
-        </div>
+        
     </div>
     
  
