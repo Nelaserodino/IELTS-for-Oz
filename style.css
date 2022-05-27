@@ -30,6 +30,7 @@
     color: #02CDD0;
     font-size: 1.5rem;
     transition: 0.4s;
+    text-decoration: none;
 }
 
 .header__menu{
@@ -45,6 +46,7 @@
     color: #291B44;
     font-size: 1.3rem;
     transition: 0.4s;
+    text-decoration: none;
 
 }
 
@@ -309,6 +311,7 @@
 
 
 
+
 /*IELTS*/
 .IELTS-container{
     display: grid;
@@ -458,7 +461,6 @@
     font-size: 2.2rem;
     color: #291B44;
     text-align: center;
-    margin-top: 3rem;
 }
 
 .formulario p{
@@ -466,62 +468,26 @@
     letter-spacing: 1px;
     font-size: 1.7rem;
     text-align: center;
-    margin-top: 2rem;
     color: #291B44;
 }
 
-.formulario-datos {
-    padding: 2rem 8rem;
-    display: grid;
-    grid-template-areas: ". nombre telefono ."
-                        ". mensaje mensaje ."
-                        ". btn btn .";
-}
-
-.nombre{
-    grid-area: nombre;
-    padding: 1rem;
-}
-.telefono{
-    grid-area: telefono;
-    padding: 1rem;
-}
-.mensaje{
-    grid-area: mensaje;
-    padding: 1rem;   
-}
 .btn {
-    grid-area: btn;
-    padding: 1rem;
-    text-decoration: none;
-    width: 30%;
-    text-align: center;
-    transition: all 0.7s; 
-    
+     border: none;
+     background-color: #02CDD0;
 }
 
-.formulario-datos label {
-    font-family: 'Gilroy-Regular', sans-serif;  
+.form-control{
+    border: #291B44 1px solid;
+    font-family: 'Gilroy-bold', sans-serif;  
     letter-spacing: 1px;
     font-size: 1.3rem;
-    color: #291B44;
-}
-
-.formulario-datos textarea, input, button{
-    width: 100%;
-    border: 1px solid #291B44;
-    border-radius: 0.5rem;
-    background-color: #00C8CC;
-    font-family: 'Gilroy-Medium', sans-serif;  
-    letter-spacing: 1px;
-    font-size: 1.3rem;
-    padding-left: 0.3rem; 
     color: #291B44;
 } 
 
 
-.formulario-datos button:hover{
-    background-color: #02CDD0;
+.btn:hover{
+    background-color: #291B44;
+    color: white;
 }
 
 
@@ -655,17 +621,7 @@
     .listening p, .reading p, .writing p, .speaking  p{
         font-size: 0.8rem;
     }
-    .formulario-datos {
-        padding: 2rem 0;
-        display: grid;
-        grid-template-areas: ". nombre telefono ."
-                            ". mensaje mensaje ."
-                            ". btn btn .";
-    }
    
-    .btn{
-        width: 50%;
-    }
 }
 
 /*tablet*/
@@ -745,20 +701,12 @@
     .contenedor__testimonio{
     width: 100%;
     }
-    .formulario-datos {
-    padding: 2rem 0;
-    display: grid;
-    grid-template-areas: ". nombre telefono ."
-                        ". mensaje mensaje ."
-                        ". btn btn .";
-    }
+   
     .iconos img{
         width: 4.8rem;  
     }
 
-    .btn{
-        width: 50%;
-    }
+   
 }
 
 
