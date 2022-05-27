@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    list-style: none;
     box-sizing: border-box;
     font-family: 'Gilroy-Bold', sans-serif;
     font-family: 'Gilroy-Heavy', sans-serif;
@@ -30,6 +29,7 @@
     color: #02CDD0;
     font-size: 1.5rem;
     transition: 0.4s;
+    text-decoration: none;
 }
 
 .header__menu{
@@ -45,6 +45,7 @@
     color: #291B44;
     font-size: 1.3rem;
     transition: 0.4s;
+    text-decoration: none;
 
 }
 
@@ -378,36 +379,15 @@
 }
 
 /*WORKING HOLIDAY*/
-.WH-container{
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-areas: ". WH-container__banner."
-                         ". requisitos ."
-                         ". idiomas .";
-    grid-template-columns: 15% 70% 15%;
-    justify-items: center;
-    row-gap: 2rem;
+.WH-container p{
+    margin: 2rem 0;
 }
-
-.WH-container__banner {
-        grid-area: WH-container__banner;
-        font-family: 'Gilroy-Regular', sans-serif; 
-        color: #291B44;
-        padding: 1.25rem 0;
-        letter-spacing: 2px;
-        font-size: 1.5rem;
-    }
-.WH-container__banner span{
-        color: #00C8CC;
-        font-size: 4rem;
-    }
-
-.WH-container__requisitos{
-    grid-area: requisitos;
+.WH-container h1{
+    color: #291B44;
+    margin: 2rem 0;
 }
-.WH-container__idiomas{
-    grid-area: idiomas;
+.WH-container span{
+    color: #00C8CC;
 }
 
 /*TARIFAS*/
@@ -632,20 +612,7 @@
     .estrellas__testimonio{
         width: 3rem;
     }
-    .IELTS-container{
-        grid-template-columns:5% 90% 5% ;
-        row-gap: 2rem;
-    }
-    .IELTS-container__banner, 
-    .WH-container__banner,
-    .tarifas-container__banner{
-        font-size: 1rem;
-    }
-    .IELTS-container__banner span,
-    .WH-container__banner span,
-    .tarifas-container__banner span{
-        font-size: 2rem;
-    }
+   
     .tarifas-container{
         grid-template-columns: 5% 45% 45% 5%;
     }
@@ -655,17 +622,7 @@
     .listening p, .reading p, .writing p, .speaking  p{
         font-size: 0.8rem;
     }
-    .formulario-datos {
-        padding: 2rem 0;
-        display: grid;
-        grid-template-areas: ". nombre telefono ."
-                            ". mensaje mensaje ."
-                            ". btn btn .";
-    }
-   
-    .btn{
-        width: 50%;
-    }
+    
 }
 
 /*tablet*/
@@ -745,20 +702,11 @@
     .contenedor__testimonio{
     width: 100%;
     }
-    .formulario-datos {
-    padding: 2rem 0;
-    display: grid;
-    grid-template-areas: ". nombre telefono ."
-                        ". mensaje mensaje ."
-                        ". btn btn .";
-    }
+    
     .iconos img{
         width: 4.8rem;  
     }
 
-    .btn{
-        width: 50%;
-    }
 }
 
 
