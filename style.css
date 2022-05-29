@@ -76,236 +76,108 @@
      display: none;
  }
 /*INDEX - MAIN*/
-
-.index-container{
-    display: grid;
-    grid-template-areas:
-                        " banner banner banner"
-                        ". descripcion ."
-                        ". sobreMi . "
-                        ". testimonio .";
-                    
-    grid-template-columns: 5% 90% 5%;
-    row-gap: 3.5rem;
-    
-}
-
-
-#banner{
-    grid-area: banner;
-}
-
-#descripcion{
-    grid-area: descripcion;
-}
-
-#sobreMi{
-    grid-area: sobreMi;
-}
-#testimonio{
-    grid-area: testimonio;
-}
-
-#banner{
-    padding: 17rem 3rem;
-    display: flex;
-    justify-content: center;
+.banner{
     background-image: url(./img/pexels-rebecca-kate-4604963.jpg);
     background-size: cover;
-}
-
-.contenido__banner {
+    padding: 17rem 3rem;
     color: #291B44;
-    display: flex;
-    flex-direction: column;
 }
 
-.contenido__banner h1, span {
+.banner__titulo,
+.banner__span{
     font-size: 4rem;
-    padding: 1.25rem 0; 
-    font-family: 'Gilroy-Bold', sans-serif;  
-    letter-spacing: 3px;
-    
+    font-family: 'Gilroy-Heavy', sans-serif;  
+    letter-spacing: 3px;   
 }
 
-.contenido__banner span{
+.banner__span{
     color: #ffffff;
 }
 
-.contenido__banner h2{
+.banner__subtitulo{
     font-size: 1.8rem;
-    font-family: 'Gilroy-Bold', sans-serif;  
+    font-family: 'Gilroy-Regular', sans-serif;  
     text-align: right;
 }
 
-
-#descripcion{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.contenedor-img__descripcion img{
-    width: 34.5rem;
-    padding-right: 0.25rem;
-}
-
-.contenedor-texto__descripcion {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+.descripcionIndex,
+.sobreMi{
+    margin: 15rem 0;
     color: #291B44;
 }
-
-.contenedor-texto__descripcion h2{
+.descripcionIndex__img{
+    width: 100%;
+    border: #291B44 2px solid;
+    border-radius: 15px 50px 30px;
+}
+.descripcionIndex__h2,
+.sobreMi__h2,
+.testimonio__h2{
+    color: #291B44;
     font-family: 'Gilroy-Bold', sans-serif;  
     letter-spacing: 1px;
     font-size: 2rem;
 }
-
-.contenedor-texto__descripcion span{
-    color: #02CDD0;
-    font-size: 2rem;
+.descripcionIndex__span,
+.sobreMi__span,
+.testimonio__span{
+    color: #00C8CC;
+    font-family: 'Gilroy-Bold', sans-serif;  
 }
-
-.contenedor-texto__descripcion p{
+.descripcionIndex__texto,
+.sobreMi__texto{
+    font-size: 1.4rem;
     font-family: 'Gilroy-Regular', sans-serif;  
+
+}
+.descripcionIndex__boton{
+    border: none;
+    background-color: #291B44;
+    color: white;
+    font-family: 'Gilroy-Bold', sans-serif; 
     letter-spacing: 1px;
-    font-size: 1.2rem;
-    padding: 1.25rem 0;
+} 
+      
+.descripcionIndex__boton:hover{
+    background-color: #00C8CC;
+    color: #291B44;
+   }
+
+.sobreMi__img{
+    border-radius: 50%;
+    width: 80%;
 }
 
-.contenido__btn{
-    background-color: #291b44;
-    color:white;
-    border-radius: 100px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 700;
-    padding: 1%;
-    width: 30%;
-    text-align: center;
-    position: relative;
-    left: 25%;
-    transition: all 0.7s;
-    
+.testimonio__tarjeta__img{
+width: 50%;
 }
-
-.contenido__btn:hover{
-    background-color: #02CDD0;
+.testimonio__tarjeta__estrellas{
     width: 50%;
-    left: 15%;
 }
 
-#sobreMi{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+/*
 
-.contenedor-descripcion__sobreMi{
-    color: #291B44;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-}
 
-.contenedor-descripcion__sobreMi h4{
-    font-family: 'Gilroy-Bold', sans-serif;  
-    letter-spacing: 2px;
-    font-size: 2rem;
-    color: #291B44;
-    padding-bottom: 1.25rem;
-}
 
-.contenedor-descripcion__sobreMi span{
-    color: #02CDD0;
-    letter-spacing: 2px;
-    font-size: 2rem;
-}
-
-.contenedor-descripcion__sobreMi p{
-    letter-spacing: 1px;
-    font-size: 1.2em;
-}
-
-.contenedor-img__SobreMi img{
-    width: 21.8rem;
-    border-radius: 50%;
-}
-
-#testimonio h3{
-    font-family: 'Gilroy-Bold', sans-serif;  
-    letter-spacing: 1px;
-    font-size: 2rem;
-    color: #291B44;
-    text-align: center;
-    padding: 2rem;
-}
-#testimonio span{
-    color: #02CDD0;
-    font-size: 2rem;
-}
-
-.contenedor__grid{
-    display: grid;
-    grid-template-rows: repeat(4,auto);
-    grid-template-columns: repeat(2, auto);
-    justify-items: center;
-    row-gap: 3rem;  
-}
-
-.contenedor__testimonio{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    border:1px solid #291B44;
-    border-radius: 5%;
-    width: 60%;
-    background-color: #f3f1f1;
-}
-.contenedor__testimonio p{
-    font-size: 1.1rem;
-}
-
-.foto__testimonio{
-    width: 6rem;
-    border-radius: 50%;
-}
-.estrellas__testimonio{
-    width: 6rem;
-}
 
 
 /*FOOTER*/
 
-#footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: white;
-    font-size: 1.4rem;
-    margin: 3rem;  
+.footer{
+    background-color: rgb(218, 213, 213);
+    font-size: 1.2rem; 
     border-top: 1px solid #291B44 ;
+    height: auto;
+    margin:2rem 0;
+    padding: 2rem 0;
+}
+.footer__h4{
+    font-size: 1.2rem; 
+}
+.footer__email a{
+    padding-left: 1rem;
 }
 
-
-.contenedor-instagram, .contenedor-email{
-    display: flex;
-    align-items: center;
-    margin: 0.3rem;  
-}
-
-#footer h4 {
-    font-family: 'Gilroy-Bold', sans-serif;
-    color: #291B44;
-    font-size: 1.4rem;
-    margin: 0.6rem;
-}
 
 
 
@@ -328,18 +200,24 @@
 
 
 /*IELTS, WORKING HOLIDAY, Tarifas*/
-.container p{
+.containerIELTS p,
+.containerWH p,
+.containerTarifas p{
     margin: 1.5rem 0;
     font-size: 1.2rem;
 }
-.container h1{
+.containerIELTS h1,
+.containerWH h1,
+.containerTarifas h1{
     color: #291B44;
     text-align: center;
 }
-.container span{
+.containerIELTS span,
+.containerWH span,
+.containerTarifas span{
     color: #00C8CC;
-}
-.container li{
+} 
+.containerIELTS li{
     font-size: 1.2rem;
 }
 
@@ -366,7 +244,7 @@
     color: #291B44;
 }
 
-.btn {
+.formulario__boton {
      border: none;
      background-color: #02CDD0;
 }
@@ -381,15 +259,16 @@
 } 
 
 
-.btn:hover{
+.formulario__boton:hover{
     background-color: #291B44;
     color: white;
 }
 
 
-
 /*celular*/
-@media only screen and (max-width:480px){
+
+
+@media only screen and (max-width:576px) {
     .mostrar-menu,
     .esconder-menu{
         display: block;
@@ -427,86 +306,105 @@
    #check:checked ~ .header__menu{
         right: 0;
     }
-    #banner{
-        padding: 5rem 1rem;
+    .banner{
+        padding: 8rem 0;
     }
-
-    .contenido__banner h1, span {
-        font-size: 2rem;        
-    }
-    
-    .contenido__banner h2{
-        font-size: 1.8rem;
-    }
-
-    #descripcion{
-        flex-direction: column;
-        text-align: left;
-    }
-
-    #sobreMi{
-        flex-direction: column-reverse;
-    }
-    #sobreMi img{
-        width: 8rem;
-    }
-    .contenedor-img__descripcion img{
-        width: 10rem;
-    }
-    .contenedor-texto__descripcion h2,
-    .contenedor-texto__descripcion span,
-    .contenedor-descripcion__sobreMi h4,
-    .contenedor-descripcion__sobreMi span{
-        font-size: 1.4rem;
-    }
-
-    .contenedor-texto__descripcion p,
-    .contenedor-descripcion__sobreMi p{
-        font-size: 1rem;
-    }
-
-    .contenido__btn{
-        left: 0;
-        padding: 10px;
-        font-size: 1rem;
-        width: 70%;
-    }
-
-    #testimonio h3, 
-    #testimonio span{
-        flex-direction: column;
-        font-size: 1.4rem;
-    }
-    .contenedor__grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .contenedor__testimonio{
-    width: 100%;
-    }
-    .contenedor__testimonio p{
-        font-size: 1rem;
-    }
-    .foto__testimonio{
-        width: 3rem;
-    }
-    .estrellas__testimonio{
-        width: 3rem;
-    }
-   
-    .tarifas-container{
-        grid-template-columns: 5% 45% 45% 5%;
-    }
-     .iconos img{
-        width: 3rem;
-    }
+.banner__titulo,
+.banner__span{
+    font-size: 2.5rem;
+    font-family: 'Gilroy-Heavy', sans-serif;  
+    letter-spacing: 3px;   
 }
 
+.banner__span{
+    color: #ffffff;
+}
+
+.banner__subtitulo{
+    font-size: 1.4rem;
+    font-family: 'Gilroy-Regular', sans-serif;  
+}
+
+.descripcionIndex,
+.sobreMi{
+    margin: 5rem 0;
+    color: #291B44;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.descripcionIndex__img{
+    width: 100%;
+    border: #291B44 2px solid;
+    border-radius: 15px 50px 30px;
+    margin-bottom: 2rem;
+}
+.sobreMi{
+    flex-direction: column-reverse;
+}
+.descripcionIndex__h2,
+.sobreMi__h2,
+.testimonio__h2{
+    color: #291B44;
+    font-family: 'Gilroy-Bold', sans-serif;  
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    text-align: center; 
+}
+.descripcionIndex__span,
+.sobreMi__span,
+.testimonio__span{
+    color: #00C8CC;
+    font-family: 'Gilroy-Bold', sans-serif;  
+    text-align: center; 
+}
+.descripcionIndex__texto,
+.sobreMi__texto{
+    font-size: 1rem;
+    font-family: 'Gilroy-Regular', sans-serif; 
+    text-align: center; 
+
+}
+.descripcionIndex__boton{
+    border: none;
+    background-color: #291B44;
+    color: white;
+    font-family: 'Gilroy-Bold', sans-serif; 
+    letter-spacing: 1px;
+} 
+      
+.descripcionIndex__boton:hover{
+    background-color: #00C8CC;
+    color: #291B44;
+   }
+
+ 
+.sobreMi__img{
+    border-radius: 50%;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.testimonio__tarjeta__img{
+width: 50%;
+}
+.testimonio__tarjeta__estrellas{
+    width: 50%;
+}
+}
+
+
+
+
+
+
+
+
+
 /*tablet*/
-@media only screen and (min-width:481px) and (max-width:1023px) {
+@media only screen and (min-width:577px) and (max-width:1200px) {
     .mostrar-menu,
-    .esconder-menu{
+    .esconder-menu {
         display: block;
     }
 
@@ -537,46 +435,84 @@
 
    #check:checked ~ .header__menu{
         right: 0;
-    }.contenido__banner h1, span {
-        font-size: 3rem;        
     }
-    
-    .contenido__banner h2{
-        font-size: 1.8rem;
+    .banner{
+        padding: 8rem 0;
     }
+.banner__titulo,
+.banner__span{
+    font-size: 2.5rem;
+    font-family: 'Gilroy-Heavy', sans-serif;  
+    letter-spacing: 3px;   
+}
 
-    #descripcion{
-        flex-direction: column;
-        text-align: center;
-        padding: 30px 0;
-    }
-    .contenedor-img__descripcion img{
-        width: 21rem;
-        padding-right: 0.25rem;
-    }
+.banner__span{
+    color: #ffffff;
+}
 
-    .contenido__btn{
-        left: 25%;
-        padding: 20px;
-        font-size: 24px;
-        width: 50%;
-    }
+.banner__subtitulo{
+    font-size: 1.4rem;
+    font-family: 'Gilroy-Regular', sans-serif;  
+}
 
-    #sobreMi{
-        flex-direction: column-reverse;
-        padding: 30px 0;
-    }
-    .contenedor-img__SobreMi{
-        padding-bottom: 20px;
-    }
-    #testimonio{
-        flex-direction: column;
-    }
-    
-    .contenedor__testimonio{
+.descripcionIndex,
+.sobreMi{
+    color: #291B44;
+    display: flex;
+    margin: 7rem 0;
+}
+
+.descripcionIndex__img{
     width: 100%;
-    }
-   
+    border: #291B44 2px solid;
+    border-radius: 15px 50px 30px;
+
+}
+.descripcionIndex__h2,
+.sobreMi__h2,
+.testimonio__h2{
+    color: #291B44;
+    font-family: 'Gilroy-Bold', sans-serif;  
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+}
+.descripcionIndex__span,
+.sobreMi__span,
+.testimonio__span{
+    color: #00C8CC;
+    font-family: 'Gilroy-Bold', sans-serif;  
+}
+.descripcionIndex__texto,
+.sobreMi__texto{
+    font-size: 1rem;
+    font-family: 'Gilroy-Regular', sans-serif; 
+
+}
+.descripcionIndex__boton{
+    border: none;
+    background-color: #291B44;
+    color: white;
+    font-family: 'Gilroy-Bold', sans-serif; 
+    letter-spacing: 1px;
+} 
+      
+.descripcionIndex__boton:hover{
+    background-color: #00C8CC;
+    color: #291B44;
+   }
+
+.sobreMi__img{
+    border-radius: 50%;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.testimonio__tarjeta__img{
+width: 50%;
+}
+.testimonio__tarjeta__estrellas{
+    width: 50%;
+}
 
 }
 
@@ -584,6 +520,7 @@
 
 
 /*compu*/
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:1201px){
     
 }
+
