@@ -521,6 +521,11 @@ width: 50%;
 
 /*compu*/
 @media only screen and (min-width:1201px){
-    
+    .descripcionIndex,
+.sobreMi{
+
+    display: flex;
+
+}
 }
 
