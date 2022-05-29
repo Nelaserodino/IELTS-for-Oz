@@ -79,7 +79,7 @@
 .banner{
     background-image: url(./img/pexels-rebecca-kate-4604963.jpg);
     background-size: cover;
-    padding: 17rem 3rem;
+    padding: 10rem 3rem;
     color: #291B44;
 }
 
@@ -184,7 +184,9 @@ width: 50%;
 
 
 /*IELTS*/
-
+.card-container{
+    width: 18rem;
+}
 .card-img-top{
     width: 40%;
 }
@@ -204,21 +206,30 @@ width: 50%;
 .containerWH p,
 .containerTarifas p{
     margin: 1.5rem 0;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 .containerIELTS h1,
 .containerWH h1,
 .containerTarifas h1{
     color: #291B44;
     text-align: center;
-}
+    font-size: 4rem;
+    font-family: 'Gilroy-Heavy', sans-serif;  
+    letter-spacing: 3px;
+} 
 .containerIELTS span,
 .containerWH span,
 .containerTarifas span{
     color: #00C8CC;
+    font-family: 'Gilroy-Heavy', sans-serif;
 } 
 .containerIELTS li{
     font-size: 1.2rem;
+}
+.containerIELTS,
+.containerWH,
+.containerTarifas{
+    margin: 5rem 0;
 }
 
 /*TARIFAS*/
