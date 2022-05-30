@@ -184,9 +184,7 @@ width: 50%;
 
 
 /*IELTS*/
-.card-container{
-    width: 18rem;
-}
+
 .card-img-top{
     width: 40%;
 }
@@ -196,8 +194,11 @@ width: 50%;
 
     font-size: 2rem;
 }
+.card{
+    margin: 0 1rem;
+}
 .ielts{
-    width: 60%;
+    width: 80%;
 }
 
 
@@ -206,7 +207,7 @@ width: 50%;
 .containerWH p,
 .containerTarifas p{
     margin: 1.5rem 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .containerIELTS h1,
 .containerWH h1,
@@ -230,6 +231,16 @@ width: 50%;
 .containerWH,
 .containerTarifas{
     margin: 5rem 0;
+}
+
+.containerIELTS-skills h5{
+    border: 2px solid #00C8CC;
+    height: 3rem;
+    margin-top: 5rem;
+}
+.icono{
+    font-size: 4rem;
+    color: #02CDD0;
 }
 
 /*TARIFAS*/
