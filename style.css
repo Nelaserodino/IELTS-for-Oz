@@ -240,7 +240,7 @@ left: 20px;
 .containerIELTS,
 .containerWH,
 .containerTarifas{
-    margin: 5rem 0;
+    margin: 4rem 0;
 }
 
 .containerIELTS-skills h5{
@@ -378,6 +378,7 @@ left: 20px;
 .sobreMi{
     flex-direction: column-reverse;
 }
+
 .descripcionIndex__h2,
 .sobreMi__h2,
 .testimonio__h2{
@@ -431,8 +432,20 @@ width: 30%;
 .testimonio__tarjeta__estrellas{
     width: 30%;
 }
-}
 
+.containerIELTS h1,
+.containerWH h1,
+.containerTarifas h1{
+    font-size: 3rem;
+} 
+.containerIELTS span,
+.containerWH span,
+.containerTarifas span{
+    color: #00C8CC;
+    font-family: 'Gilroy-Heavy', sans-serif;
+} 
+
+}
 
 
 
