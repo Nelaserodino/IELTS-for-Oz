@@ -15,13 +15,15 @@
 #header{
     margin: 10px;
     background-color: white;
-    padding: 0 6.25rem;
+    padding: 0 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Gilroy-Regular', sans-serif;
 }
-
+.header__logo{
+    margin-bottom: 0;
+}
 .header__logo a {
     text-transform: uppercase;
     font-family: 'Gilroy-Heavy', sans-serif;
@@ -36,6 +38,7 @@
     display: flex;
     padding: 0 0.62rem;
     transition: 0.4s;
+    text-align: center;
 }
 
 
@@ -148,12 +151,19 @@
     width: 80%;
 }
 
+.testimonio__caja{
+    border: #291B44 2px solid;
+}
+
 .testimonio__tarjeta__img{
-width: 50%;
+width: 40%;
+left: 20px;
 }
 .testimonio__tarjeta__estrellas{
-    width: 50%;
+    width: 40%;
 }
+
+
 
 /*
 
@@ -355,11 +365,158 @@ width: 50%;
     flex-direction: column;
     margin-bottom: 2rem;
 }
+.descricpion__img-container{
+    display: flex;
+    justify-content: center;
+}
 .descripcionIndex__img{
     width: 100%;
     border: #291B44 2px solid;
     border-radius: 15px 50px 30px;
     margin-bottom: 2rem;
+}
+.sobreMi{
+    flex-direction: column-reverse;
+}
+.descripcionIndex__h2,
+.sobreMi__h2,
+.testimonio__h2{
+    color: #291B44;
+    font-family: 'Gilroy-Bold', sans-serif;  
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    text-align: center; 
+}
+.descripcionIndex__span,
+.sobreMi__span,
+.testimonio__span{
+    color: #00C8CC;
+    font-family: 'Gilroy-Bold', sans-serif;  
+    text-align: center; 
+}
+.descripcionIndex__texto,
+.sobreMi__texto{
+    font-size: 1rem;
+    font-family: 'Gilroy-Regular', sans-serif; 
+    text-align: center; 
+
+}
+.descripcionIndex__boton{
+    border: none;
+    background-color: #291B44;
+    color: white;
+    font-family: 'Gilroy-Bold', sans-serif; 
+    letter-spacing: 1px;
+} 
+      
+.descripcionIndex__boton:hover{
+    background-color: #00C8CC;
+    color: #291B44;
+   }
+
+ 
+.sobreMi__img{
+    border-radius: 50%;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+.contenedor__testimonios{
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonio__tarjeta__img{
+width: 30%;
+}
+.testimonio__tarjeta__estrellas{
+    width: 30%;
+}
+}
+
+
+
+
+
+
+
+
+
+/*tablet*/
+@media only screen and (min-width:577px) and (max-width:768px) {
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    #header{
+        padding: 20px 50px;
+    }
+
+    .header__menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #c5f0f0;
+       right: -100%;
+       top: 0;
+       text-align: center;
+       padding: 100px 0px;
+       z-index: 100;
+       transition: 0.8s;
+       display: block;
+    }
+
+    .header__link{
+        padding: 20px;
+        display: block;   
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+   #check:checked ~ .header__menu{
+        right: 0;
+    }
+    .banner{
+        padding: 8rem 0;
+    }
+.banner__titulo,
+.banner__span{
+    font-size: 2.5rem;
+    font-family: 'Gilroy-Heavy', sans-serif;  
+    letter-spacing: 3px;   
+}
+
+.banner__span{
+    color: #ffffff;
+}
+
+.banner__subtitulo{
+    font-size: 1.4rem;
+    font-family: 'Gilroy-Regular', sans-serif;  
+}
+
+
+.descripcionIndex,
+.sobreMi{
+    margin: 5rem 0;
+    color: #291B44;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.descripcionIndex__img{
+    width:80%;
+    border: #291B44 2px solid;
+    border-radius: 15px 50px 30px;
+    margin-bottom: 2rem;
+}
+.descricpion__img-container{
+    display: flex;
+    justify-content: center;
 }
 .sobreMi{
     flex-direction: column-reverse;
@@ -413,141 +570,24 @@ width: 50%;
 .testimonio__tarjeta__estrellas{
     width: 50%;
 }
+
 }
 
-
-
-
-
-
-
-
-
-/*tablet*/
-@media only screen and (min-width:577px) and (max-width:1200px) {
-    .mostrar-menu,
-    .esconder-menu {
-        display: block;
-    }
-
-    .header__menu{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #c5f0f0;
-       right: -100%;
-       top: 0;
-       text-align: center;
-       padding: 100px 0px;
-       z-index: 100;
-       transition: 0.8s;
-       display: block;
-    }
-
-    .header__link{
-        padding: 20px;
-        display: block;   
-    }
-
-    .esconder-menu{
-        position: absolute;
-        top: 40px;
-        right: 40px;
-    }
-
-   #check:checked ~ .header__menu{
-        right: 0;
-    }
-    .banner{
-        padding: 8rem 0;
-    }
-.banner__titulo,
-.banner__span{
-    font-size: 2.5rem;
-    font-family: 'Gilroy-Heavy', sans-serif;  
-    letter-spacing: 3px;   
-}
-
-.banner__span{
-    color: #ffffff;
-}
-
-.banner__subtitulo{
-    font-size: 1.4rem;
-    font-family: 'Gilroy-Regular', sans-serif;  
-}
-
+@media only screen and (min-width:769px) and (max-width:992px){ 
 .descripcionIndex,
 .sobreMi{
-    color: #291B44;
     display: flex;
     margin: 7rem 0;
 }
-
-.descripcionIndex__img{
-    width: 100%;
-    border: #291B44 2px solid;
-    border-radius: 15px 50px 30px;
-
 }
-.descripcionIndex__h2,
-.sobreMi__h2,
-.testimonio__h2{
-    color: #291B44;
-    font-family: 'Gilroy-Bold', sans-serif;  
-    letter-spacing: 1px;
-    font-size: 1.4rem;
-}
-.descripcionIndex__span,
-.sobreMi__span,
-.testimonio__span{
-    color: #00C8CC;
-    font-family: 'Gilroy-Bold', sans-serif;  
-}
-.descripcionIndex__texto,
-.sobreMi__texto{
-    font-size: 1rem;
-    font-family: 'Gilroy-Regular', sans-serif; 
-
-}
-.descripcionIndex__boton{
-    border: none;
-    background-color: #291B44;
-    color: white;
-    font-family: 'Gilroy-Bold', sans-serif; 
-    letter-spacing: 1px;
-} 
-      
-.descripcionIndex__boton:hover{
-    background-color: #00C8CC;
-    color: #291B44;
-   }
-
-.sobreMi__img{
-    border-radius: 50%;
-    width: 80%;
-    margin-bottom: 2rem;
-}
-
-.testimonio__tarjeta__img{
-width: 50%;
-}
-.testimonio__tarjeta__estrellas{
-    width: 50%;
-}
-
-}
-
-
-
-
 /*compu*/
-@media only screen and (min-width:1201px){
+@media only screen and (min-width:993px){
     .descripcionIndex,
 .sobreMi{
-
     display: flex;
+    margin: 10rem 0;
 
 }
 }
+
 
