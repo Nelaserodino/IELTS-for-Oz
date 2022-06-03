@@ -3,6 +3,9 @@
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
+}
+
+body{
     font-family: 'Gilroy-Bold', sans-serif;
     font-family: 'Gilroy-Heavy', sans-serif;
     font-family: 'Gilroy-Light', sans-serif;
@@ -81,7 +84,7 @@
 .banner{
     background-image: url(./img/pexels-rebecca-kate-4604963.jpg);
     background-size: cover;
-    padding: 10rem 3rem;
+    padding: 14rem 3rem;
     color: #291B44;
 }
 
@@ -157,7 +160,6 @@
 .testimonio__tarjeta__img,
 .testimonio__tarjeta__estrellas{
     width: 40%;
-    
 }
 
 /*FOOTER*/
