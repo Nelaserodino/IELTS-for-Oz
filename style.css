@@ -186,21 +186,33 @@ left: 20px;
 
 
 /*IELTS*/
-
-.card-img-top{
-    width: 40%;
-}
 .card-title{
     font-family: 'Gilroy-Bold', sans-serif;
     color: #291B44;
-
     font-size: 2rem;
 }
 .card{
-    margin: 0 1rem;
+    margin: 1rem;
 }
-.ielts{
-    width: 80%;
+.icono{
+    margin-top: 1rem;
+    font-size: 4rem;
+    color: #02CDD0;
+}
+.efectoTarjetas{
+    transition: all 0.4s;
+}
+.efectoTarjetas:hover{
+    transform: translateY(-5%);
+}
+.efectoTarjetas h5{
+    text-decoration: none;
+    font-family: 'Gilroy-Bold', sans-serif;
+    color: #291B44;
+    font-size: 2rem;
+}
+.efectoTarjetas a{
+    text-decoration: none;
 }
 
 
@@ -239,10 +251,6 @@ left: 20px;
     border: 2px solid #00C8CC;
     height: 3rem;
     margin-top: 5rem;
-}
-.icono{
-    font-size: 4rem;
-    color: #02CDD0;
 }
 
 /*TARIFAS*/
@@ -293,7 +301,7 @@ left: 20px;
 
 @media only screen and (max-width:575px) {
     body{
-        background-color: red;
+        
     }
     .mostrar-menu,
     .esconder-menu{
@@ -327,6 +335,7 @@ left: 20px;
    #check:checked ~ .header__menu{
         right: 0;
     }
+    /*index*/
     .banner{
         padding: 7rem 2rem;
     }
@@ -373,18 +382,46 @@ left: 20px;
         width: 30%;
     }
 
+    /*ietls*/
+    .efectoTarjetas h5{
+        font-size: 1.5rem;
+    }
+    .containerIELTS__tarjetas{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 70%;
+    }
+    .icono{
+        font-size: 3rem;
+    }
+    .card{
+        margin: 1rem;
+    }
+    .efectoTarjetas:hover{
+        transform: translateX(-5%);
+    }
 
-.containerIELTS h1,
-.containerWH h1,
-.containerTarifas h1{
+
+    /*ielts, WH, Tarifas*/
+    .containerIELTS h1,
+    .containerWH h1,
+    .containerTarifas h1{
     font-size: 3rem;
-} 
-.containerIELTS span,
-.containerWH span,
-.containerTarifas span{
+    } 
+    .containerIELTS span,
+    .containerWH span,
+    .containerTarifas span{
     color: #00C8CC;
-    font-family: 'Gilroy-Heavy', sans-serif;
-} 
+    } 
+    .containerIELTS-skills p,
+    .containerIELTS-skills li{
+        font-size: 0.9rem;
+    }
+    .containerIELTS-skills h5{
+        font-size: 1.4rem;
+        height: 2.5rem;
+    }
 
 }
 
@@ -469,6 +506,16 @@ left: 20px;
         font-size: 1.4rem;
         text-align: center; 
     }
+     /*ielts*/
+     .efectoTarjetas h5{
+        font-size: 1.3rem;
+    }
+    .icono{
+        font-size: 3rem;
+    }
+    .card{
+        margin: 0.5rem;
+    }
 }
 
 @media only screen and (min-width:768px) and (max-width:991px){ 
@@ -502,6 +549,11 @@ left: 20px;
         font-size: 1.4rem;
         text-align: center; 
     }
+
+    /*ielts*/
+    .efectoTarjetas h5{
+        font-size: 1.4rem;
+    }
 }
 /*compu*/
 @media only screen and (min-width:992px){
@@ -513,7 +565,6 @@ left: 20px;
     .descripcionIndex__img,
     .sobreMi__img{
         width:90%;}
-
 }
 
 
