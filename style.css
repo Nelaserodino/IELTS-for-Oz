@@ -154,14 +154,11 @@
     border: #291B44 2px solid;
 }
 
-.testimonio__tarjeta__img{
-width: 40%;
-left: 20px;
-}
+.testimonio__tarjeta__img,
 .testimonio__tarjeta__estrellas{
     width: 40%;
+    
 }
-
 
 /*FOOTER*/
 
@@ -180,20 +177,7 @@ left: 20px;
     padding-left: 1rem;
 }
 
-
-
-
-
-
 /*IELTS*/
-.card-title{
-    font-family: 'Gilroy-Bold', sans-serif;
-    color: #291B44;
-    font-size: 2rem;
-}
-.card{
-    margin: 1rem;
-}
 .icono{
     margin-top: 1rem;
     font-size: 4rem;
@@ -201,20 +185,21 @@ left: 20px;
 }
 .efectoTarjetas{
     transition: all 0.4s;
+    margin: 1rem;
 }
 .efectoTarjetas:hover{
     transform: translateY(-5%);
 }
-.efectoTarjetas h5{
+
+.efectoTarjetas a{
     text-decoration: none;
+}
+.efectoTarjetas h5,
+.containerIELTS-skills h5{
     font-family: 'Gilroy-Bold', sans-serif;
     color: #291B44;
     font-size: 2rem;
 }
-.efectoTarjetas a{
-    text-decoration: none;
-}
-
 
 /*IELTS, WORKING HOLIDAY, Tarifas*/
 .containerIELTS p,
@@ -253,9 +238,15 @@ left: 20px;
     margin-top: 5rem;
 }
 
-/*TARIFAS*/
-.tarifas{
-    width: 100%;
+/*CURSOS*/
+.cursos__tarjeta img{
+    width: 80%;
+}
+.cursos__tarjeta{
+    margin: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 /*CONTACTO*/
@@ -279,6 +270,7 @@ left: 20px;
 .formulario__boton {
      border: none;
      background-color: #02CDD0;
+     font-family: 'Gilroy-bold', sans-serif;
 }
 
 
@@ -300,9 +292,9 @@ left: 20px;
 /*celular*/
 
 @media only screen and (max-width:575px) {
-    body{
-        
-    }
+   body{
+       background-color: red;
+   }
     .mostrar-menu,
     .esconder-menu{
         display: block;
@@ -381,6 +373,7 @@ left: 20px;
     .testimonio__tarjeta__estrellas{
         width: 30%;
     }
+    
 
     /*ietls*/
     .efectoTarjetas h5{
@@ -394,9 +387,6 @@ left: 20px;
     }
     .icono{
         font-size: 3rem;
-    }
-    .card{
-        margin: 1rem;
     }
     .efectoTarjetas:hover{
         transform: translateX(-5%);
@@ -422,7 +412,20 @@ left: 20px;
         font-size: 1.4rem;
         height: 2.5rem;
     }
-
+    .cursos__tarjeta img{
+        width: 50%;
+    }
+    .cursos__tarjeta{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    .card-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
@@ -516,6 +519,29 @@ left: 20px;
     .card{
         margin: 0.5rem;
     }
+    .containerIELTS__tarjetas{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 70%;
+    }
+    .efectoTarjetas:hover{
+        transform: translateX(-5%);
+    }
+    .cursos__tarjeta img{
+        width: 50%;
+    }
+    .cursos__tarjeta{
+        display: flex;
+        align-items: center;
+        width: 90%;
+        margin: 1rem;
+    }
+    .card-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media only screen and (min-width:768px) and (max-width:991px){ 
@@ -554,7 +580,21 @@ left: 20px;
     .efectoTarjetas h5{
         font-size: 1.4rem;
     }
+    .card__cursos img{
+        width:60%;
+    }
+    .container__cursos{
+        display: flex;
+        flex-direction: column;
+    }
+    .card__cursos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
+
 /*compu*/
 @media only screen and (min-width:992px){
     .descripcionIndex,
