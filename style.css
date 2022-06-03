@@ -13,7 +13,6 @@
 /* INDEX - HEADER*/
 
 #header{
-    margin: 10px;
     background-color: white;
     padding: 0 3rem;
     display: flex;
@@ -127,8 +126,8 @@
     color: #00C8CC;
     font-family: 'Gilroy-Bold', sans-serif;  
 }
-.descripcionIndex__texto,
-.sobreMi__texto{
+.descripcionIndex__p,
+.sobreMi__p{
     font-size: 1.4rem;
     font-family: 'Gilroy-Regular', sans-serif;  
 
@@ -162,13 +161,6 @@ left: 20px;
 .testimonio__tarjeta__estrellas{
     width: 40%;
 }
-
-
-
-/*
-
-
-
 
 
 /*FOOTER*/
@@ -299,139 +291,88 @@ left: 20px;
 
 /*celular*/
 
-
-@media only screen and (max-width:576px) {
+@media only screen and (max-width:575px) {
+    body{
+        background-color: red;
+    }
     .mostrar-menu,
     .esconder-menu{
         display: block;
     }
-
     #header{
-        padding: 20px 50px;
+        padding: 10px 20px;
     }
-
     .header__menu{
         position: fixed;
         width: 100%;
         height: 100vh;
         background-color: #c5f0f0;
-       right: -100%;
-       top: 0;
-       text-align: center;
-       padding: 100px 0px;
-       z-index: 100;
-       transition: 0.8s;
-       display: block;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+        display: block;
     }
-
     .header__link{
-        padding: 20px;
+        padding:20px;
         display: block;   
     }
-
     .esconder-menu{
         position: absolute;
         top: 40px;
-        right: 40px;
+        right:40px;
     }
-
    #check:checked ~ .header__menu{
         right: 0;
     }
     .banner{
-        padding: 8rem 0;
+        padding: 7rem 2rem;
     }
-.banner__titulo,
-.banner__span{
-    font-size: 2.5rem;
-    font-family: 'Gilroy-Heavy', sans-serif;  
-    letter-spacing: 3px;   
-}
+    .banner__titulo,
+    .banner__span{
+        font-size: 2.5rem;
+    }
+    .banner__subtitulo{
+        font-size: 1.4rem;
+    }
 
-.banner__span{
-    color: #ffffff;
-}
+    .descripcionIndex,
+    .sobreMi{
+        margin: 3rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .descricpion__img-container{
+        display: flex;
+        justify-content: center;
+    }
+    .descripcionIndex__img,
+    .sobreMi__img{
+        margin: 2rem 0;
+    }
+    .sobreMi{
+     flex-direction: column-reverse;
+    }
+    .descripcionIndex__h2,
+    .sobreMi__h2,
+    .testimonio__h2{    
+        font-size: 1.4rem;
+        text-align: center; 
+    }
+    .descripcionIndex__p,
+    .sobreMi__p{
+        font-size: 1rem;
+        text-align: center; 
+    }   
+    .testimonio__tarjeta__img{
+        width: 30%;
+    }
+    .testimonio__tarjeta__estrellas{
+        width: 30%;
+    }
 
-.banner__subtitulo{
-    font-size: 1.4rem;
-    font-family: 'Gilroy-Regular', sans-serif;  
-}
-
-.descripcionIndex,
-.sobreMi{
-    margin: 5rem 0;
-    color: #291B44;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-}
-.descricpion__img-container{
-    display: flex;
-    justify-content: center;
-}
-.descripcionIndex__img{
-    width: 100%;
-    border: #291B44 2px solid;
-    border-radius: 15px 50px 30px;
-    margin-bottom: 2rem;
-}
-.sobreMi{
-    flex-direction: column-reverse;
-}
-
-.descripcionIndex__h2,
-.sobreMi__h2,
-.testimonio__h2{
-    color: #291B44;
-    font-family: 'Gilroy-Bold', sans-serif;  
-    letter-spacing: 1px;
-    font-size: 1.4rem;
-    text-align: center; 
-}
-.descripcionIndex__span,
-.sobreMi__span,
-.testimonio__span{
-    color: #00C8CC;
-    font-family: 'Gilroy-Bold', sans-serif;  
-    text-align: center; 
-}
-.descripcionIndex__texto,
-.sobreMi__texto{
-    font-size: 1rem;
-    font-family: 'Gilroy-Regular', sans-serif; 
-    text-align: center; 
-
-}
-.descripcionIndex__boton{
-    border: none;
-    background-color: #291B44;
-    color: white;
-    font-family: 'Gilroy-Bold', sans-serif; 
-    letter-spacing: 1px;
-} 
-      
-.descripcionIndex__boton:hover{
-    background-color: #00C8CC;
-    color: #291B44;
-   }
-
- 
-.sobreMi__img{
-    border-radius: 50%;
-    width: 80%;
-    margin-bottom: 2rem;
-}
-.contenedor__testimonios{
-    display: flex;
-    flex-direction: column;
-}
-
-.testimonio__tarjeta__img{
-width: 30%;
-}
-.testimonio__tarjeta__estrellas{
-    width: 30%;
-}
 
 .containerIELTS h1,
 .containerWH h1,
@@ -449,13 +390,11 @@ width: 30%;
 
 
 
-
-
-
-
-
 /*tablet*/
-@media only screen and (min-width:577px) and (max-width:768px) {
+@media only screen and (min-width:576px) and (max-width:767px) {
+    body{
+        background-color: blue;
+    }
     .mostrar-menu,
     .esconder-menu{
         display: block;
@@ -494,113 +433,87 @@ width: 30%;
         right: 0;
     }
     .banner{
-        padding: 8rem 0;
+        padding: 10rem 2rem;
     }
-.banner__titulo,
-.banner__span{
-    font-size: 2.5rem;
-    font-family: 'Gilroy-Heavy', sans-serif;  
-    letter-spacing: 3px;   
+    .banner__titulo,
+    .banner__span{
+        font-size: 3.3rem;  
+    }
+    .banner__subtitulo{
+        font-size: 1.6rem;
+    }
+    .descripcionIndex,
+    .sobreMi{
+        margin: 4rem 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+   
+    .descripcionIndex__img,
+    .sobreMi__img{
+        width:90%;
+        margin-bottom: 2rem;
+    }
+    .sobreMi{
+        flex-direction: column-reverse;
+    }
+    .descripcionIndex__h2,
+    .sobreMi__h2,
+    .testimonio__h2{
+        font-size: 2rem;
+        text-align: center; 
+    }
+    .descripcionIndex__p,
+    .sobreMi__p{
+        font-size: 1.4rem;
+        text-align: center; 
+    }
 }
 
-.banner__span{
-    color: #ffffff;
-}
-
-.banner__subtitulo{
-    font-size: 1.4rem;
-    font-family: 'Gilroy-Regular', sans-serif;  
-}
-
-
-.descripcionIndex,
-.sobreMi{
-    margin: 5rem 0;
-    color: #291B44;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-}
-.descripcionIndex__img{
-    width:80%;
-    border: #291B44 2px solid;
-    border-radius: 15px 50px 30px;
-    margin-bottom: 2rem;
-}
-.descricpion__img-container{
-    display: flex;
-    justify-content: center;
-}
-.sobreMi{
-    flex-direction: column-reverse;
-}
-.descripcionIndex__h2,
-.sobreMi__h2,
-.testimonio__h2{
-    color: #291B44;
-    font-family: 'Gilroy-Bold', sans-serif;  
-    letter-spacing: 1px;
-    font-size: 1.4rem;
-    text-align: center; 
-}
-.descripcionIndex__span,
-.sobreMi__span,
-.testimonio__span{
-    color: #00C8CC;
-    font-family: 'Gilroy-Bold', sans-serif;  
-    text-align: center; 
-}
-.descripcionIndex__texto,
-.sobreMi__texto{
-    font-size: 1rem;
-    font-family: 'Gilroy-Regular', sans-serif; 
-    text-align: center; 
-
-}
-.descripcionIndex__boton{
-    border: none;
-    background-color: #291B44;
-    color: white;
-    font-family: 'Gilroy-Bold', sans-serif; 
-    letter-spacing: 1px;
-} 
-      
-.descripcionIndex__boton:hover{
-    background-color: #00C8CC;
-    color: #291B44;
-   }
-
- 
-.sobreMi__img{
-    border-radius: 50%;
-    width: 80%;
-    margin-bottom: 2rem;
-}
-
-.testimonio__tarjeta__img{
-width: 50%;
-}
-.testimonio__tarjeta__estrellas{
-    width: 50%;
-}
-
-}
-
-@media only screen and (min-width:769px) and (max-width:992px){ 
-.descripcionIndex,
-.sobreMi{
-    display: flex;
-    margin: 7rem 0;
-}
+@media only screen and (min-width:768px) and (max-width:991px){ 
+    body{
+        background-color: gray;
+    }
+    .descripcionIndex,
+    .sobreMi{
+        margin: 4rem 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+   
+    .descripcionIndex__img,
+    .sobreMi__img{
+        width:70%;
+        margin-bottom: 2rem;
+    }
+    .sobreMi{
+        flex-direction: column-reverse;
+    }
+    .descripcionIndex__h2,
+    .sobreMi__h2,
+    .testimonio__h2{
+        font-size: 2rem;
+        text-align: center; 
+    }
+    .descripcionIndex__p,
+    .sobreMi__p{
+        font-size: 1.4rem;
+        text-align: center; 
+    }
 }
 /*compu*/
-@media only screen and (min-width:993px){
+@media only screen and (min-width:992px){
     .descripcionIndex,
-.sobreMi{
-    display: flex;
-    margin: 10rem 0;
+    .sobreMi{
+        display: flex;
+        margin: 10rem 0;
+    }
+    .descripcionIndex__img,
+    .sobreMi__img{
+        width:90%;}
 
-}
 }
 
 
