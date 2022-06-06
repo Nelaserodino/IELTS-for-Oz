@@ -1,0 +1,28 @@
+
+.footer{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    margin-top: 1rem;
+    padding: 2rem 0;
+    .footer__h4{
+        font-size: 1.2rem; 
+        font-family: 'Gilroy-Bold', sans-serif; 
+        letter-spacing: 1px;
+        border-bottom: 1px solid $colorAzul;
+    }
+    a{
+        padding-left: 0.5rem;
+        text-decoration: none;
+        color: $colorAzul;
+        font-family: 'Gilroy-Bold', sans-serif; 
+        letter-spacing: 1px;
+        font-size: 1.2rem; 
+    }
+    i{
+        transition: 0.4s;
+        margin: 0.5rem;
+        &:hover{
+            transform: translateX(-5%);
+        }
+    }
+}

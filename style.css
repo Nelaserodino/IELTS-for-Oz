@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -8,12 +9,10 @@
 body{
     font-family: 'Gilroy-Bold', sans-serif;
     font-family: 'Gilroy-Heavy', sans-serif;
-    font-family: 'Gilroy-Light', sans-serif;
-    font-family: 'Gilroy-Medium', sans-serif;
     font-family: 'Gilroy-Regular', sans-serif;
 }
 
-/* INDEX - HEADER*/
+/*INDEX - HEADER*/
 
 #header{
     background-color: white;
@@ -191,6 +190,8 @@ body{
 .footer i:hover{
     transform: translateX(-5%);
 }
+*/
+
 
 /*IELTS*/
 .icono{

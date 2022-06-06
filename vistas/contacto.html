@@ -13,7 +13,7 @@
   />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../scss/main.css">
 </head>
 
 </head>
@@ -34,27 +34,27 @@
     </header>
 
 
-    <div class="contacto-container d-flex flex-column align-items-center">
+    <div class="d-flex flex-column align-items-center">
         <div class="col-8">
             <div class="row formulario mt-4">
-                <h4>¿Necesitas más información?</h4>
+                <h1>¿Necesitas más información?</h1>
                 <p>Drop me a line! Te contestaré as quick as lightning!</p>           
             </div>
             <div class="row">
-                    <div class=" col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-3">
-                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                    </div>
+                <div class=" col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-4">
+                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
                   
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-3">
-                          <input type="email" class="form-control" id="floatingInput" placeholder="E-mail" >
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-4">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="E-mail" >
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                    <textarea class="form-control" placeholder="Mensaje" id="floatingTextarea"></textarea>
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
-                          <textarea class="form-control" placeholder="Mensaje" id="floatingTextarea"></textarea>
-                    </div>
-                    <div class="d-grid gap-2 d-md-block">
-                        <button class="btn btn-primary formulario__boton" type="button">ENVIAR</button>
-                    </div>
-            </div>
+                <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-primary formulario__boton" type="button">ENVIAR</button>
+                </div>
+             </div>
         </div>
         
     </div>

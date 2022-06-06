@@ -1,0 +1,448 @@
+
+/*celular*/
+
+@media only screen and (max-width:575px) {
+  #header{
+    padding: 20px 50px;
+    #check:checked ~ .header__menu{
+        right: 0;
+    }  
+    .mostrar-menu{
+        display: block;
+    }
+    .header__menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #c5f0f0;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+        display: block;
+        .header__link{
+            padding: 20px;
+            display: block;   
+        }
+        .esconder-menu{
+            display: block;
+            position: absolute;
+            top: 40px;
+            right: 40px;
+        }
+    }     
+}
+    /*index*/
+    .banner{
+        padding: 7rem 2rem;
+        .banner__titulo{
+            font-size: 2.5rem;
+        }
+        .banner__span{
+            font-size: 2.5rem;
+        }
+        .banner__subtitulo{
+            font-size: 1.4rem;
+        }
+    }
+
+    .descripcionIndex{
+        margin: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        .descricpion__img-container{
+            display: flex;
+            justify-content: center;
+        }
+        .descripcionIndex__img{
+            margin: 2rem 0;
+        }
+        .descripcionIndex__h2{    
+            font-size: 1.4rem;
+            text-align: center; 
+        }
+        .descripcionIndex__p{
+            font-size: 1rem;
+            text-align: center; 
+        }
+    }
+    .sobreMi{
+        margin: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        .sobreMi__h2{    
+            font-size: 1.4rem;
+            text-align: center; 
+        }
+        .sobreMi__p{
+            font-size: 1rem;
+            text-align: center; 
+        } 
+        .sobreMi__img{
+            margin: 2rem 0;
+        }
+    }
+    .testimonio__caja{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    .testimonio__h2{    
+        font-size: 1.4rem;
+        text-align: center; 
+    }
+    .testimonio__tarjeta__img{
+        width: 30%;
+    }
+    .testimonio__tarjeta__estrellas{
+        width: 30%;
+    }
+    
+
+    //ietls//
+    .containerIELTS{
+        margin: 4rem 0;
+        h1 {
+            font-size: 2.5rem;
+        }
+        p{
+            margin: 1.5rem 0;
+            font-size: 1.2rem;
+        }
+    }
+    .efectoTarjetas {
+        .icono{
+            font-size: 3rem;
+        }
+        h5{
+            font-size: 1.5rem;
+        }
+        &:hover{
+            transform: translateX(-5%);
+        }
+    }
+    .containerIELTS__tarjetas{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        width: 70%;
+    }
+    .containerIELTS-skills{
+        p{
+            font-size: 0.9rem; 
+        }
+       li{
+            font-size: 0.9rem;
+        }
+        h5{
+            font-size: 1.4rem;
+            height: 2.5rem;
+        }
+    }
+    
+    
+    //WH//
+    .containerWH {
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+    //cursos//
+    .card-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .containerTarifas {
+            h1{
+                font-size: 2.5rem;
+            } 
+            p{
+                font-size: 1.2rem;
+            }
+            .cursos__tarjeta{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                text-align: center;
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    
+    }
+    .containerTarifas{
+        li{
+            font-size: 1rem;
+        }   
+    }
+}
+    
+/*tablet*/
+@media only screen and (min-width:576px) and (max-width:767px){ 
+   #header{
+        padding: 20px 50px;
+        #check:checked ~ .header__menu{
+            right: 0;
+        }  
+        .mostrar-menu{
+            display: block;
+        }
+        
+        .header__menu{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: #c5f0f0;
+            right: -100%;
+            top: 0;
+            text-align: center;
+            padding: 100px 0px;
+            z-index: 100;
+            transition: 0.8s;
+            display: block;
+            .header__link{
+                padding: 20px;
+                display: block;   
+            }
+            .esconder-menu{
+                display: block;
+                position: absolute;
+                top: 40px;
+                right: 40px;
+            }
+        }     
+   }
+    /*index*/
+    .banner{
+        padding: 7rem 2rem;
+        .banner__titulo{
+            font-size: 2.5rem;
+        }
+        .banner__span{
+            font-size: 2.5rem;
+        }
+        .banner__subtitulo{
+            font-size: 1.4rem;
+        }
+    }
+
+    .descripcionIndex{
+        margin: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        .descricpion__img-container{
+            display: flex;
+            justify-content: center;
+        }
+        .descripcionIndex__img{
+            margin: 2rem 0;
+        }
+        .descripcionIndex__h2{    
+            font-size: 1.4rem;
+            text-align: center; 
+        }
+        .descripcionIndex__p{
+            font-size: 1rem;
+            text-align: center; 
+        }
+    }
+    .sobreMi{
+        margin: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        .sobreMi__h2{    
+            font-size: 1.4rem;
+            text-align: center; 
+        }
+        .sobreMi__p{
+            font-size: 1rem;
+            text-align: center; 
+        } 
+        .sobreMi__img{
+            margin: 2rem 0;
+        }
+    }
+    .testimonio__caja{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    .testimonio__h2{    
+        font-size: 1.4rem;
+        text-align: center; 
+    }
+    .testimonio__tarjeta__img{
+        width: 30%;
+    }
+    .testimonio__tarjeta__estrellas{
+        width: 30%;
+    }
+    .containerIELTS{
+        margin: 4rem 0;
+        h1 {
+            font-size: 2.5rem;
+        }
+        p{
+            margin: 1.5rem 0;
+            font-size: 1.2rem;
+        }
+    }
+    .efectoTarjetas {
+        .icono{
+            font-size: 3rem;
+        }
+        h5{
+            font-size: 1.5rem;
+        }
+        &:hover{
+            transform: none;
+        }
+    }
+    .containerIELTS__tarjetas{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        width: 70%;
+    }
+    .containerIELTS-skills{
+        p{
+            font-size: 0.9rem; 
+        }
+       li{
+            font-size: 0.9rem;
+        }
+        h5{
+            font-size: 1.4rem;
+            height: 2.5rem;
+        }
+    }
+    .card-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .containerTarifas {
+            h1{
+                font-size: 2.5rem;
+            } 
+        }
+        .cursos__tarjeta{
+            width: 70%;
+            margin: 1rem;
+            img{
+                width: 80%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:991px){ 
+    #header{
+        padding: 20px 50px;
+        #check:checked ~ .header__menu{
+            right: 0;
+        }  
+        .mostrar-menu{
+            display: block;
+        }
+        
+        .header__menu{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: #c5f0f0;
+            right: -100%;
+            top: 0;
+            text-align: center;
+            padding: 100px 0px;
+            z-index: 100;
+            transition: 0.8s;
+            display: block;
+            .header__link{
+                padding: 20px;
+                display: block;   
+            }
+            .esconder-menu{
+                display: block;
+                position: absolute;
+                top: 40px;
+                right: 40px;
+            }
+        }     
+   }
+    .descripcionIndex{
+        margin: 4rem 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        .descripcionIndex__h2{
+            font-size: 2rem;
+            text-align: center; 
+            
+        }
+        .descripcionIndex__img{
+            margin-bottom: 2rem;
+        }
+        .descripcionIndex__p{
+            font-size: 1.4rem;
+            text-align: center; 
+        }
+    }
+    
+    .sobreMi{
+        margin: 4rem 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        flex-direction: column-reverse;
+        .sobreMi__p{
+            font-size: 1.4rem;
+            text-align: center; 
+        }
+        .sobreMi__img{
+            margin-bottom: 2rem;
+            }
+        .sobreMi h2{
+            font-size: 2rem;
+            text-align: center; 
+            }       
+    }
+    .testimonio__h2{
+        font-size: 2rem;
+        text-align: center; 
+    }
+    .efectoTarjetas h5{
+        font-size: 1.4rem;
+    }
+    .containerIELTS-skills{
+        font-size: 1.4rem;
+    }
+}
+
+/*compu*/
+@media only screen and (min-width:992px){
+
+    .descripcionIndex{
+        display: flex;
+        margin: 8rem 0;
+        .descripcionIndex__img{
+            width:90%;
+        }
+    }
+    .sobreMi{
+        display: flex;
+        margin: 8rem 0;
+        .sobreMi__img{
+            width:90%;
+        }
+    }
+}

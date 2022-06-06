@@ -1,0 +1,278 @@
+//INDEX//
+.banner{
+    background-image: url(/img/pexels-rebecca-kate-4604963.jpg);
+    background-size: cover;
+    padding: 14rem 3rem;
+    color: $colorAzul;
+    .banner__span{
+        font-size: 4rem;
+        font-family: 'Gilroy-Heavy', sans-serif;  
+        letter-spacing: 3px;   
+        color: #ffffff;
+    }
+    .banner__titulo{
+    font-size: 4rem;
+    font-family: 'Gilroy-Heavy', sans-serif;  
+    letter-spacing: 3px;   
+    }
+    .banner__subtitulo{
+        font-size: 1.8rem;
+        font-family: $fuenteNormal;  
+        text-align: right;
+    }
+}
+
+.descripcionIndex{
+    margin: 15rem 0;
+    color: $colorAzul;
+    .descripcionIndex__img{
+        width: 90%;
+        border: $colorAzul 2px solid;
+        border-radius: 15px 50px 30px;
+    }
+    .descripcionIndex__h2{
+        color: $colorAzul;
+        font-family: $fuenteNegrita;  
+        letter-spacing: 1px;
+        font-size: 2rem;
+    }
+    .descripcionIndex__span{
+        color: $colorVerde;
+        font-family: $fuenteNegrita;  
+    }
+    .descripcionIndex__p{
+        font-size: 1.4rem;
+        font-family: $fuenteNormal;  
+    }
+    .descripcionIndex__boton{
+        border: none;
+        background-color: $colorAzul;
+        color: white;
+        font-family: $fuenteNegrita; 
+        letter-spacing: 1px;
+        &:hover{
+            background-color: $colorVerde;
+            color: $colorAzul;
+           }
+    } 
+}
+
+.sobreMi{
+    margin: 15rem 0;
+    color: $colorAzul;
+    .sobreMi__h2{
+        color: $colorAzul;
+        font-family: $fuenteNegrita;  
+        letter-spacing: 1px;
+        font-size: 2rem;
+    }
+    .sobreMi__span{
+        color: $colorVerde;
+        font-family: $fuenteNegrita;  
+    }
+    .sobreMi__p{
+        font-size: 1.4rem;
+        font-family: $fuenteNormal;  
+    }
+    .sobreMi__img{
+        border-radius: 50%;
+        width: 80%;
+    }
+}
+
+.testimonio__h2{
+    color: $colorAzul;
+    font-family: $fuenteNegrita;  
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+.testimonio__caja{
+    .testimonio__span{
+        color: $colorVerde;
+        font-family: $fuenteNegrita;  
+    }
+    .testimonio__tarjeta__img{
+        width: 40%;
+    }
+    .testimonio__tarjeta__estrellas{
+        width: 40%;
+    }
+}
+
+//IELTS//
+.containerIELTS{
+    margin: 4rem 0;
+    h1 {
+        color: #291B44;
+        text-align: center;
+        font-size: 4rem;
+        font-family: 'Gilroy-Heavy', sans-serif;  
+        letter-spacing: 3px;
+    }
+    span{
+        color: #00C8CC;
+        font-family: 'Gilroy-Heavy', sans-serif;
+    }
+    p{
+        margin: 1.5rem 0;
+        font-size: 1.2rem;
+    }
+}
+.efectoTarjetas{
+    transition: all 0.4s;
+    margin: 1rem;
+    &:hover{
+        transform: translateY(-5%);
+    }
+    a{
+        text-decoration: none;
+    }
+    h5{
+        font-family: $fuenteNegrita;
+        color: #291B44;
+        font-size: 2rem;
+    }
+    .icono{
+        margin-top: 1rem;
+        font-size: 4rem;
+        color: #02CDD0;
+    }
+}
+.containerIELTS-skills{
+    p{
+        font-size: 1.2rem;
+    }
+    li{
+        font-size: 1.2rem;
+    }
+    h5{
+        border: 2px solid #00C8CC;
+        height: 3rem;
+        margin-top: 5rem;
+        font-family: $fuenteNegrita;
+        color: #291B44;
+        font-size: 2rem;
+    }
+}  
+
+//working holiday//
+.containerWH{
+    margin: 4rem 4rem;
+    h1{
+        color: #291B44;
+        text-align: center;
+        font-size: 4rem;
+        font-family: 'Gilroy-Heavy', sans-serif;  
+        letter-spacing: 3px;
+    } 
+    span{
+        color: $colorVerde;
+        font-family: 'Gilroy-Heavy', sans-serif;
+    } 
+    p{
+        margin: 1.5rem 0;
+        font-size: 1.2rem;
+    }
+    .accordion-item{
+        font-size: 1.2rem;
+    }
+    .accordion-button {
+        color: $colorAzul;
+        font-family: $fuenteNegrita;
+        background-color:$colorVerde;
+        border-color: white;
+        box-shadow: none;
+        font-size: 1.2rem;
+    }
+}
+
+//cursos//
+
+.containerTarifas{
+    margin: 4rem 0rem;
+    h1{
+        color: #291B44;
+        text-align: center;
+        font-size: 4rem;
+        font-family: 'Gilroy-Heavy', sans-serif;  
+        letter-spacing: 3px;
+    } 
+    p{
+        margin: 1.5rem 0;
+        font-size: 1.2rem;
+    }
+    span{
+        color: #00C8CC;
+        font-family: 'Gilroy-Heavy', sans-serif;
+    } 
+    .cursos__tarjeta{
+        margin: 1rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        img{
+            width: 80%;
+        }
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    li{
+        font-size: 1.2rem;
+    }
+}
+
+//contacto//
+.formulario{
+    margin-top: 4rem 0;
+    h1{
+        font-family: $fuenteNegrita;  
+        letter-spacing: 1px;
+        font-size: 2.5rem;
+        color: #291B44;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    p{
+        font-family: $fuenteNormal;  
+        letter-spacing: 1px;
+        font-size: 1.7rem;
+        text-align: center;
+        color: #291B44;
+    }
+}
+.form-control{
+    border: #291B44 1px solid;
+    font-family: $fuenteNegrita;  
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: #291B44;
+} 
+
+.formulario__boton {
+     border: none;
+     background-color: #02CDD0;
+     font-family: $fuenteNegrita;
+     &:hover{
+        background-color: #291B44;
+        color: white;
+    }
+}
+#floatingTextarea{
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
