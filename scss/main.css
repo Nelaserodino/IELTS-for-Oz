@@ -7,22 +7,25 @@
 }
 
 @font-face {
+  body {
     font-family: 'Gilroy-Bold', sans-serif;
-    src: url(../fuentes/Gilroy-Bold.ttf);
+    src: url(/fuentes/Gilroy-Bold.ttf);
   }
-
+}
 
 @font-face {
+  body {
     font-family: 'Gilroy-Regular', sans-serif;
-    src: url(../fuentes/Gilroy-Light.ttf);
+    src: url(/fuentes/Gilroy-Light.ttf);
   }
-
+}
 
 @font-face {
+  body {
     font-family: 'Gilroy-Heavy', sans-serif;
-    src: url(../fuentes/Gilroy-Heavy.ttf);
+    src: url(/fuentes/Gilroy-Heavy.ttf);
   }
-
+}
 
 #header {
   background-color: white;
@@ -118,7 +121,7 @@
 }
 
 .banner {
-  background-image: url(../img/pexels-rebecca-kate-4604963.jpg);
+  background-image: url(/img/pexels-rebecca-kate-4604963.jpg);
   background-size: cover;
   padding: 14rem 3rem;
   color: #291B44;
@@ -149,7 +152,7 @@
 }
 
 .descripcionIndex__img {
-  width: 90%;
+  width: 70%;
   border: #291B44 2px solid;
   border-radius: 15px 50px 30px;
 }
