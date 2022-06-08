@@ -7,24 +7,18 @@
 }
 
 @font-face {
-  * {
-    font-family: 'Gilroy-Regular';
+    font-family: 'Gilroy-Regular' sans-serif;
     src: url(/fuentes/Gilroy-Light.ttf);
-  }
 }
 
 @font-face {
-  * {
-    font-family: 'Gilroy-Bold';
+    font-family: 'Gilroy-Bold' sans-serif;
     src: url(/fuentes/Gilroy-Bold.ttf);
-  }
 }
 
 @font-face {
-  * {
-    font-family: 'Gilroy-Heavy';
+    font-family: 'Gilroy-Heavy' sans-serif;
     src: url(/fuentes/Gilroy-Heavy.ttf);
-  }
 }
 
 #header {
@@ -121,7 +115,7 @@
 }
 
 .banner {
-  background-image: url(/img/pexels-rebecca-kate-4604963.jpg);
+  background-image: url(../img/pexels-rebecca-kate-4604963.jpg);
   background-size: cover;
   padding: 14rem 3rem;
   color: #291B44;
