@@ -2,26 +2,28 @@
 /*celular*/
 
 @media only screen and (max-width:575px) {
-  #header{
-    padding: 20px 50px;
-    #check:checked ~ .header__menu{
+  
+    #header{
+        padding: 20px 50px;
+        #check:checked ~ .header__menu{
         right: 0;
-    }  
-    .mostrar-menu{
+        }  
+        .mostrar-menu{
         display: block;
-    }
-    .header__menu{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #c5f0f0;
-        right: -100%;
-        top: 0;
-        text-align: center;
-        padding: 100px 0px;
-        z-index: 100;
-        transition: 0.8s;
-        display: block;
+        }
+        .header__menu{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: #c5f0f0;
+            right: -100%;
+            top: 0;
+            text-align: center;
+            padding: 100px 0px;
+            z-index: 100;
+            transition: 0.8s;
+            display: block;
+        }
         .header__link{
             padding: 20px;
             display: block;   
@@ -33,17 +35,19 @@
             right: 40px;
         }
     }     
-}
+
+
     /*index*/
     .banner{
         padding: 7rem 2rem;
-        .banner__titulo{
+        &__titulo{
             font-size: 2.5rem;
         }
-        .banner__span{
+        &__span{
             font-size: 2.5rem;
         }
-        .banner__subtitulo{
+        
+        &__subtitulo{
             font-size: 1.4rem;
         }
     }
@@ -56,14 +60,14 @@
             display: flex;
             justify-content: center;
         }
-        .descripcionIndex__img{
+        &__img{
             margin: 2rem 0;
         }
-        .descripcionIndex__h2{    
+        &__h2{    
             font-size: 1.4rem;
             text-align: center; 
         }
-        .descripcionIndex__p{
+        &__p{
             font-size: 1rem;
             text-align: center; 
         }
@@ -73,51 +77,54 @@
         display: flex;
         flex-direction: column;
         flex-direction: column-reverse;
-        .sobreMi__h2{    
+        &__h2{    
             font-size: 1.4rem;
             text-align: center; 
         }
-        .sobreMi__p{
+        &__p{
             font-size: 1rem;
             text-align: center; 
         } 
-        .sobreMi__img{
+        &__img{
             margin: 2rem 0;
         }
     }
-    .testimonio__caja{
+    .testimonio{
         width: 80%;
         display: flex;
         justify-content: center;
+        &__h2{    
+            font-size: 1.4rem;
+            text-align: center; 
+        }
     }
-    .testimonio__h2{    
-        font-size: 1.4rem;
-        text-align: center; 
-    }
-    .testimonio__tarjeta__img{
-        width: 30%;
-    }
-    .testimonio__tarjeta__estrellas{
-        width: 30%;
+   
+    .testimonio__tarjeta{  
+        &__img{
+            width: 30%;
+        }
+        &__estrellas{
+            width: 30%;
+        }
     }
     
 
     //ietls//
     .containerIELTS{
         margin: 4rem 0;
-        h1 {
+        &__h1{
             font-size: 2.5rem;
         }
-        p{
+        &__texto{
             margin: 1.5rem 0;
             font-size: 1.2rem;
         }
     }
     .efectoTarjetas {
-        .icono{
+        &__icono{
             font-size: 3rem;
         }
-        h5{
+        &__h5{
             font-size: 1.5rem;
         }
         &:hover{
@@ -132,13 +139,13 @@
         width: 70%;
     }
     .containerIELTS-skills{
-        p{
+        &__texto{
             font-size: 0.9rem; 
         }
-       li{
+        &__lista{
             font-size: 0.9rem;
         }
-        h5{
+        &__h5{
             font-size: 1.4rem;
             height: 2.5rem;
         }
@@ -147,41 +154,31 @@
     
     //WH//
     .containerWH {
-        h1{
+        &__h1{
             font-size: 2.5rem;
         }
     }
     //cursos//
-    .card-group{
+    .containerTarifas {
+        &__h1{
+            font-size: 2.5rem;
+            } 
+        &__texto{
+            font-size: 1.2rem;
+            }
+        }
+    .cursos{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        .containerTarifas {
-            h1{
-                font-size: 2.5rem;
-            } 
-            p{
-                font-size: 1.2rem;
-            }
-            .cursos__tarjeta{
-                display: flex;
-                align-items: center;
-                width: 100%;
-                text-align: center;
-                img {
-                    width: 50%;
-                }
-            }
+        &__img{
+            width: 50%;
         }
+    } 
+}     
     
-    }
-    .containerTarifas{
-        li{
-            font-size: 1rem;
-        }   
-    }
-}
+
     
 /*tablet*/
 @media only screen and (min-width:576px) and (max-width:767px){ 
@@ -221,13 +218,13 @@
     /*index*/
     .banner{
         padding: 7rem 2rem;
-        .banner__titulo{
+        &__titulo{
             font-size: 2.5rem;
         }
-        .banner__span{
+        &__span{
             font-size: 2.5rem;
         }
-        .banner__subtitulo{
+        &__subtitulo{
             font-size: 1.4rem;
         }
     }
@@ -240,14 +237,14 @@
             display: flex;
             justify-content: center;
         }
-        .descripcionIndex__img{
+        &__img{
             margin: 2rem 0;
         }
-        .descripcionIndex__h2{    
+        &__h2{    
             font-size: 1.4rem;
             text-align: center; 
         }
-        .descripcionIndex__p{
+        &__p{
             font-size: 1rem;
             text-align: center; 
         }
@@ -257,49 +254,51 @@
         display: flex;
         flex-direction: column;
         flex-direction: column-reverse;
-        .sobreMi__h2{    
+        &__h2{    
             font-size: 1.4rem;
             text-align: center; 
         }
-        .sobreMi__p{
+        &__p{
             font-size: 1rem;
             text-align: center; 
         } 
-        .sobreMi__img{
+        &__img{
             margin: 2rem 0;
         }
     }
-    .testimonio__caja{
+    .testimonio{
         width: 80%;
         display: flex;
         justify-content: center;
-    }
-    .testimonio__h2{    
+        &__h2{
         font-size: 1.4rem;
         text-align: center; 
+        }
     }
-    .testimonio__tarjeta__img{
-        width: 30%;
-    }
-    .testimonio__tarjeta__estrellas{
-        width: 30%;
+    .testimonio__tarjeta{  
+        &__img{
+            width: 30%;
+        }
+        &__estrellas{
+            width: 30%;
+        }
     }
     .containerIELTS{
         margin: 4rem 0;
-        h1 {
+        &__h1{
             font-size: 2.5rem;
         }
-        p{
+        &__texto{
             margin: 1.5rem 0;
             font-size: 1.2rem;
         }
     }
     .efectoTarjetas {
-        .icono{
+        &__icono{
             font-size: 3rem;
         }
-        h5{
-            font-size: 1.5rem;
+        &__h5{
+            font-size: 1.2rem;
         }
         &:hover{
             transform: none;
@@ -313,35 +312,35 @@
         width: 70%;
     }
     .containerIELTS-skills{
-        p{
+        &__texto{
             font-size: 0.9rem; 
         }
-       li{
+        &__lista{
             font-size: 0.9rem;
         }
-        h5{
+        &__h5{
             font-size: 1.4rem;
             height: 2.5rem;
         }
     }
-    .card-group{
+    
+    .containerTarifas {
+        &__h1{
+        font-size: 2.5rem;
+        } 
+        &__texto{
+        font-size: 1.2rem;
+        }
+        }
+    .cursos{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        .containerTarifas {
-            h1{
-                font-size: 2.5rem;
-            } 
+        &__img{
+        width: 50%;
         }
-        .cursos__tarjeta{
-            width: 70%;
-            margin: 1rem;
-            img{
-                width: 80%;
-            }
-        }
-    }
+    }  
 }
 
 
@@ -354,7 +353,6 @@
         .mostrar-menu{
             display: block;
         }
-        
         .header__menu{
             position: fixed;
             width: 100%;
@@ -389,10 +387,10 @@
             text-align: center; 
             
         }
-        .descripcionIndex__img{
+        &__img{
             margin-bottom: 2rem;
         }
-        .descripcionIndex__p{
+        &__p{
             font-size: 1.4rem;
             text-align: center; 
         }
@@ -404,14 +402,14 @@
         flex-direction: column;
         margin-bottom: 2rem;
         flex-direction: column-reverse;
-        .sobreMi__p{
+        &__p{
             font-size: 1.4rem;
             text-align: center; 
         }
-        .sobreMi__img{
+        &__img{
             margin-bottom: 2rem;
             }
-        .sobreMi h2{
+        h2{
             font-size: 2rem;
             text-align: center; 
             }       

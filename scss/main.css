@@ -6,10 +6,25 @@
           box-sizing: border-box;
 }
 
-body {
-  font-family: 'Gilroy-Bold', sans-serif;
-  font-family: 'Gilroy-Heavy', sans-serif;
-  font-family: 'Gilroy-Regular', sans-serif;
+@font-face {
+  body {
+    font-family: 'Gilroy-Bold', sans-serif;
+    src: url(/fuentes/Gilroy-Bold.ttf);
+  }
+}
+
+@font-face {
+  body {
+    font-family: 'Gilroy-Regular', sans-serif;
+    src: url(/fuentes/Gilroy-Light.ttf);
+  }
+}
+
+@font-face {
+  body {
+    font-family: 'Gilroy-Heavy', sans-serif;
+    src: url(/fuentes/Gilroy-Heavy.ttf);
+  }
 }
 
 #header {
@@ -106,26 +121,26 @@ body {
 }
 
 .banner {
-  background-image: url(../img/pexels-rebecca-kate-4604963.jpg);
+  background-image: url(/img/pexels-rebecca-kate-4604963.jpg);
   background-size: cover;
   padding: 14rem 3rem;
   color: #291B44;
 }
 
-.banner .banner__span {
+.banner__span {
   font-size: 4rem;
-  font-family: 'Gilroy-Heavy', sans-serif;
+  font-family: "Gilroy-Heavy", sans-serif;
   letter-spacing: 3px;
   color: #ffffff;
 }
 
-.banner .banner__titulo {
+.banner__titulo {
   font-size: 4rem;
-  font-family: 'Gilroy-Heavy', sans-serif;
+  font-family: "Gilroy-Heavy", sans-serif;
   letter-spacing: 3px;
 }
 
-.banner .banner__subtitulo {
+.banner__subtitulo {
   font-size: 1.8rem;
   font-family: "Gilroy-Regular", sans-serif;
   text-align: right;
@@ -136,30 +151,30 @@ body {
   color: #291B44;
 }
 
-.descripcionIndex .descripcionIndex__img {
+.descripcionIndex__img {
   width: 90%;
   border: #291B44 2px solid;
   border-radius: 15px 50px 30px;
 }
 
-.descripcionIndex .descripcionIndex__h2 {
+.descripcionIndex__h2 {
   color: #291B44;
   font-family: "Gilroy-Bold", sans-serif;
   letter-spacing: 1px;
   font-size: 2rem;
 }
 
-.descripcionIndex .descripcionIndex__span {
+.descripcionIndex__span {
   color: #02CDD0;
   font-family: "Gilroy-Bold", sans-serif;
 }
 
-.descripcionIndex .descripcionIndex__p {
+.descripcionIndex__p {
   font-size: 1.4rem;
   font-family: "Gilroy-Regular", sans-serif;
 }
 
-.descripcionIndex .descripcionIndex__boton {
+.descripcionIndex__boton {
   border: none;
   background-color: #291B44;
   color: white;
@@ -167,7 +182,7 @@ body {
   letter-spacing: 1px;
 }
 
-.descripcionIndex .descripcionIndex__boton:hover {
+.descripcionIndex__boton:hover {
   background-color: #02CDD0;
   color: #291B44;
 }
@@ -177,66 +192,74 @@ body {
   color: #291B44;
 }
 
-.sobreMi .sobreMi__h2 {
+.sobreMi__h2 {
   color: #291B44;
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: "Gilroy-Heavy", sans-serif;
   letter-spacing: 1px;
   font-size: 2rem;
 }
 
-.sobreMi .sobreMi__span {
+.sobreMi__span {
   color: #02CDD0;
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: "Gilroy-Heavy", sans-serif;
 }
 
-.sobreMi .sobreMi__p {
+.sobreMi__p {
   font-size: 1.4rem;
   font-family: "Gilroy-Regular", sans-serif;
 }
 
-.sobreMi .sobreMi__img {
+.sobreMi__img {
   border-radius: 50%;
   width: 80%;
 }
 
-.testimonio__h2 {
-  color: #291B44;
+.testimonio {
   font-family: "Gilroy-Bold", sans-serif;
   letter-spacing: 1px;
   font-size: 2rem;
 }
 
-.testimonio__caja .testimonio__span {
+.testimonio__h2 {
+  color: #291B44;
+}
+
+.testimonio__span {
   color: #02CDD0;
-  font-family: "Gilroy-Bold", sans-serif;
 }
 
-.testimonio__caja .testimonio__tarjeta__img {
+.testimonio__tarjeta__img {
   width: 40%;
 }
 
-.testimonio__caja .testimonio__tarjeta__estrellas {
+.testimonio__tarjeta__estrellas {
   width: 40%;
+}
+
+.testimonio__tarjeta__texto {
+  text-align: center;
+  color: #291B44;
+  font-family: "Gilroy-Regular", sans-serif;
 }
 
 .containerIELTS {
   margin: 4rem 0;
 }
 
-.containerIELTS h1 {
+.containerIELTS__h1 {
   color: #291B44;
   text-align: center;
   font-size: 4rem;
-  font-family: 'Gilroy-Heavy', sans-serif;
+  font-family: "Gilroy-Heavy", sans-serif;
   letter-spacing: 3px;
 }
 
-.containerIELTS span {
-  color: #00C8CC;
-  font-family: 'Gilroy-Heavy', sans-serif;
+.containerIELTS__span {
+  color: #02CDD0;
+  font-family: "Gilroy-Heavy", sans-serif;
 }
 
-.containerIELTS p {
+.containerIELTS__texto {
   margin: 1.5rem 0;
   font-size: 1.2rem;
 }
@@ -256,28 +279,28 @@ body {
   text-decoration: none;
 }
 
-.efectoTarjetas h5 {
+.efectoTarjetas__h5 {
   font-family: "Gilroy-Bold", sans-serif;
   color: #291B44;
   font-size: 2rem;
 }
 
-.efectoTarjetas .icono {
+.efectoTarjetas__icono {
   margin-top: 1rem;
   font-size: 4rem;
   color: #02CDD0;
 }
 
-.containerIELTS-skills p {
+.containerIELTS-skills__texto {
   font-size: 1.2rem;
 }
 
-.containerIELTS-skills li {
+.containerIELTS-skills__lista {
   font-size: 1.2rem;
 }
 
-.containerIELTS-skills h5 {
-  border: 2px solid #00C8CC;
+.containerIELTS-skills__h5 {
+  border: 2px solid #02CDD0;
   height: 3rem;
   margin-top: 5rem;
   font-family: "Gilroy-Bold", sans-serif;
@@ -289,26 +312,27 @@ body {
   margin: 4rem 4rem;
 }
 
-.containerWH h1 {
+.containerWH__h1 {
   color: #291B44;
   text-align: center;
   font-size: 4rem;
-  font-family: 'Gilroy-Heavy', sans-serif;
+  font-family: "Gilroy-Heavy", sans-serif;
   letter-spacing: 3px;
 }
 
-.containerWH span {
+.containerWH__span {
   color: #02CDD0;
-  font-family: 'Gilroy-Heavy', sans-serif;
+  font-family: "Gilroy-Heavy", sans-serif;
 }
 
-.containerWH p {
+.containerWH__texto {
   margin: 1.5rem 0;
   font-size: 1.2rem;
 }
 
 .containerWH .accordion-item {
   font-size: 1.2rem;
+  color: #291B44;
 }
 
 .containerWH .accordion-button {
@@ -325,25 +349,25 @@ body {
   margin: 4rem 0rem;
 }
 
-.containerTarifas h1 {
+.containerTarifas__h1 {
   color: #291B44;
   text-align: center;
   font-size: 4rem;
-  font-family: 'Gilroy-Heavy', sans-serif;
+  font-family: "Gilroy-Heavy", sans-serif;
   letter-spacing: 3px;
 }
 
-.containerTarifas p {
+.containerTarifas__texto {
   margin: 1.5rem 0;
   font-size: 1.2rem;
 }
 
-.containerTarifas span {
-  color: #00C8CC;
-  font-family: 'Gilroy-Heavy', sans-serif;
+.containerTarifas__span {
+  color: #02CDD0;
+  font-family: "Gilroy-Heavy", sans-serif;
 }
 
-.containerTarifas .cursos__tarjeta {
+.containerTarifas .cursos {
   margin: 1rem;
   text-align: center;
   display: -webkit-box;
@@ -354,23 +378,35 @@ body {
           align-items: center;
 }
 
-.containerTarifas .cursos__tarjeta img {
+.containerTarifas .cursos__img {
   width: 80%;
 }
 
-.containerTarifas p {
+.containerTarifas .cursos__h5 {
+  font-family: "Gilroy-Bold", sans-serif;
+  color: #291B44;
+}
+
+.containerTarifas .cursos__texto {
   font-size: 1.2rem;
 }
 
-.containerTarifas li {
+.containerTarifas .descripcionCurso__texto {
   font-size: 1.2rem;
+  font-family: "Gilroy-Bold", sans-serif;
+  color: #291B44;
+}
+
+.containerTarifas .descripcionCurso__lista {
+  font-size: 1.2rem;
+  color: #291B44;
 }
 
 .formulario {
   margin-top: 4rem 0;
 }
 
-.formulario h1 {
+.formulario__h1 {
   font-family: "Gilroy-Bold", sans-serif;
   letter-spacing: 1px;
   font-size: 2.5rem;
@@ -379,7 +415,7 @@ body {
   margin-top: 2rem;
 }
 
-.formulario p {
+.formulario__texto {
   font-family: "Gilroy-Regular", sans-serif;
   letter-spacing: 1px;
   font-size: 1.7rem;
@@ -469,11 +505,11 @@ body {
     transition: 0.8s;
     display: block;
   }
-  #header .header__menu .header__link {
+  #header .header__link {
     padding: 20px;
     display: block;
   }
-  #header .header__menu .esconder-menu {
+  #header .esconder-menu {
     display: block;
     position: absolute;
     top: 40px;
@@ -483,13 +519,13 @@ body {
   .banner {
     padding: 7rem 2rem;
   }
-  .banner .banner__titulo {
+  .banner__titulo {
     font-size: 2.5rem;
   }
-  .banner .banner__span {
+  .banner__span {
     font-size: 2.5rem;
   }
-  .banner .banner__subtitulo {
+  .banner__subtitulo {
     font-size: 1.4rem;
   }
   .descripcionIndex {
@@ -510,14 +546,14 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .descripcionIndex .descripcionIndex__img {
+  .descripcionIndex__img {
     margin: 2rem 0;
   }
-  .descripcionIndex .descripcionIndex__h2 {
+  .descripcionIndex__h2 {
     font-size: 1.4rem;
     text-align: center;
   }
-  .descripcionIndex .descripcionIndex__p {
+  .descripcionIndex__p {
     font-size: 1rem;
     text-align: center;
   }
@@ -532,18 +568,18 @@ body {
             flex-direction: column;
     flex-direction: column-reverse;
   }
-  .sobreMi .sobreMi__h2 {
+  .sobreMi__h2 {
     font-size: 1.4rem;
     text-align: center;
   }
-  .sobreMi .sobreMi__p {
+  .sobreMi__p {
     font-size: 1rem;
     text-align: center;
   }
-  .sobreMi .sobreMi__img {
+  .sobreMi__img {
     margin: 2rem 0;
   }
-  .testimonio__caja {
+  .testimonio {
     width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -565,17 +601,17 @@ body {
   .containerIELTS {
     margin: 4rem 0;
   }
-  .containerIELTS h1 {
+  .containerIELTS__h1 {
     font-size: 2.5rem;
   }
-  .containerIELTS p {
+  .containerIELTS__texto {
     margin: 1.5rem 0;
     font-size: 1.2rem;
   }
-  .efectoTarjetas .icono {
+  .efectoTarjetas__icono {
     font-size: 3rem;
   }
-  .efectoTarjetas h5 {
+  .efectoTarjetas__h5 {
     font-size: 1.5rem;
   }
   .efectoTarjetas:hover {
@@ -597,20 +633,26 @@ body {
             justify-content: center;
     width: 70%;
   }
-  .containerIELTS-skills p {
+  .containerIELTS-skills__texto {
     font-size: 0.9rem;
   }
-  .containerIELTS-skills li {
+  .containerIELTS-skills__lista {
     font-size: 0.9rem;
   }
-  .containerIELTS-skills h5 {
+  .containerIELTS-skills__h5 {
     font-size: 1.4rem;
     height: 2.5rem;
   }
-  .containerWH h1 {
+  .containerWH__h1 {
     font-size: 2.5rem;
   }
-  .card-group {
+  .containerTarifas__h1 {
+    font-size: 2.5rem;
+  }
+  .containerTarifas__texto {
+    font-size: 1.2rem;
+  }
+  .cursos {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -625,27 +667,8 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .card-group .containerTarifas h1 {
-    font-size: 2.5rem;
-  }
-  .card-group .containerTarifas p {
-    font-size: 1.2rem;
-  }
-  .card-group .containerTarifas .cursos__tarjeta {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    text-align: center;
-  }
-  .card-group .containerTarifas .cursos__tarjeta img {
+  .cursos__img {
     width: 50%;
-  }
-  .containerTarifas li {
-    font-size: 1rem;
   }
 }
 
@@ -688,13 +711,13 @@ body {
   .banner {
     padding: 7rem 2rem;
   }
-  .banner .banner__titulo {
+  .banner__titulo {
     font-size: 2.5rem;
   }
-  .banner .banner__span {
+  .banner__span {
     font-size: 2.5rem;
   }
-  .banner .banner__subtitulo {
+  .banner__subtitulo {
     font-size: 1.4rem;
   }
   .descripcionIndex {
@@ -715,14 +738,14 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .descripcionIndex .descripcionIndex__img {
+  .descripcionIndex__img {
     margin: 2rem 0;
   }
-  .descripcionIndex .descripcionIndex__h2 {
+  .descripcionIndex__h2 {
     font-size: 1.4rem;
     text-align: center;
   }
-  .descripcionIndex .descripcionIndex__p {
+  .descripcionIndex__p {
     font-size: 1rem;
     text-align: center;
   }
@@ -737,18 +760,18 @@ body {
             flex-direction: column;
     flex-direction: column-reverse;
   }
-  .sobreMi .sobreMi__h2 {
+  .sobreMi__h2 {
     font-size: 1.4rem;
     text-align: center;
   }
-  .sobreMi .sobreMi__p {
+  .sobreMi__p {
     font-size: 1rem;
     text-align: center;
   }
-  .sobreMi .sobreMi__img {
+  .sobreMi__img {
     margin: 2rem 0;
   }
-  .testimonio__caja {
+  .testimonio {
     width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -770,18 +793,18 @@ body {
   .containerIELTS {
     margin: 4rem 0;
   }
-  .containerIELTS h1 {
+  .containerIELTS__h1 {
     font-size: 2.5rem;
   }
-  .containerIELTS p {
+  .containerIELTS__texto {
     margin: 1.5rem 0;
     font-size: 1.2rem;
   }
-  .efectoTarjetas .icono {
+  .efectoTarjetas__icono {
     font-size: 3rem;
   }
-  .efectoTarjetas h5 {
-    font-size: 1.5rem;
+  .efectoTarjetas__h5 {
+    font-size: 1.2rem;
   }
   .efectoTarjetas:hover {
     -webkit-transform: none;
@@ -802,17 +825,23 @@ body {
             justify-content: center;
     width: 70%;
   }
-  .containerIELTS-skills p {
+  .containerIELTS-skills__texto {
     font-size: 0.9rem;
   }
-  .containerIELTS-skills li {
+  .containerIELTS-skills__lista {
     font-size: 0.9rem;
   }
-  .containerIELTS-skills h5 {
+  .containerIELTS-skills__h5 {
     font-size: 1.4rem;
     height: 2.5rem;
   }
-  .card-group {
+  .containerTarifas__h1 {
+    font-size: 2.5rem;
+  }
+  .containerTarifas__texto {
+    font-size: 1.2rem;
+  }
+  .cursos {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -827,15 +856,8 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .card-group .containerTarifas h1 {
-    font-size: 2.5rem;
-  }
-  .card-group .cursos__tarjeta {
-    width: 70%;
-    margin: 1rem;
-  }
-  .card-group .cursos__tarjeta img {
-    width: 80%;
+  .cursos__img {
+    width: 50%;
   }
 }
 
@@ -888,10 +910,10 @@ body {
     font-size: 2rem;
     text-align: center;
   }
-  .descripcionIndex .descripcionIndex__img {
+  .descripcionIndex__img {
     margin-bottom: 2rem;
   }
-  .descripcionIndex .descripcionIndex__p {
+  .descripcionIndex__p {
     font-size: 1.4rem;
     text-align: center;
   }
@@ -908,14 +930,14 @@ body {
     -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
   }
-  .sobreMi .sobreMi__p {
+  .sobreMi__p {
     font-size: 1.4rem;
     text-align: center;
   }
-  .sobreMi .sobreMi__img {
+  .sobreMi__img {
     margin-bottom: 2rem;
   }
-  .sobreMi .sobreMi h2 {
+  .sobreMi h2 {
     font-size: 2rem;
     text-align: center;
   }

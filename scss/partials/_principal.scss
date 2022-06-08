@@ -4,18 +4,18 @@
     background-size: cover;
     padding: 14rem 3rem;
     color: $colorAzul;
-    .banner__span{
+    &__span{
         font-size: 4rem;
-        font-family: 'Gilroy-Heavy', sans-serif;  
+        font-family: $fuenteHeavy;  
         letter-spacing: 3px;   
         color: #ffffff;
     }
-    .banner__titulo{
+    &__titulo{
     font-size: 4rem;
-    font-family: 'Gilroy-Heavy', sans-serif;  
+    font-family: $fuenteHeavy;  
     letter-spacing: 3px;   
     }
-    .banner__subtitulo{
+    &__subtitulo{
         font-size: 1.8rem;
         font-family: $fuenteNormal;  
         text-align: right;
@@ -25,26 +25,26 @@
 .descripcionIndex{
     margin: 15rem 0;
     color: $colorAzul;
-    .descripcionIndex__img{
+    &__img{
         width: 90%;
         border: $colorAzul 2px solid;
         border-radius: 15px 50px 30px;
     }
-    .descripcionIndex__h2{
+    &__h2{
         color: $colorAzul;
         font-family: $fuenteNegrita;  
         letter-spacing: 1px;
         font-size: 2rem;
     }
-    .descripcionIndex__span{
+    &__span{
         color: $colorVerde;
         font-family: $fuenteNegrita;  
     }
-    .descripcionIndex__p{
+    &__p{
         font-size: 1.4rem;
         font-family: $fuenteNormal;  
     }
-    .descripcionIndex__boton{
+    &__boton{
         border: none;
         background-color: $colorAzul;
         color: white;
@@ -60,61 +60,66 @@
 .sobreMi{
     margin: 15rem 0;
     color: $colorAzul;
-    .sobreMi__h2{
+    &__h2{
         color: $colorAzul;
-        font-family: $fuenteNegrita;  
+        font-family: $fuenteHeavy;  
         letter-spacing: 1px;
         font-size: 2rem;
     }
-    .sobreMi__span{
+    &__span{
         color: $colorVerde;
-        font-family: $fuenteNegrita;  
+        font-family: $fuenteHeavy;  
     }
-    .sobreMi__p{
+    &__p{
         font-size: 1.4rem;
         font-family: $fuenteNormal;  
     }
-    .sobreMi__img{
+   &__img{
         border-radius: 50%;
         width: 80%;
     }
 }
 
-.testimonio__h2{
-    color: $colorAzul;
+.testimonio{
     font-family: $fuenteNegrita;  
     letter-spacing: 1px;
     font-size: 2rem;
+    &__h2{
+        color: $colorAzul;
+    }
+    &__span{
+        color: $colorVerde;   
+    }
 }
-
-.testimonio__caja{
-    .testimonio__span{
-        color: $colorVerde;
-        font-family: $fuenteNegrita;  
-    }
-    .testimonio__tarjeta__img{
+.testimonio__tarjeta{  
+    &__img{
         width: 40%;
     }
-    .testimonio__tarjeta__estrellas{
+    &__estrellas{
         width: 40%;
+    }
+    &__texto{
+        text-align: center;
+        color: $colorAzul;
+        font-family: $fuenteNormal;
     }
 }
 
 //IELTS//
 .containerIELTS{
     margin: 4rem 0;
-    h1 {
-        color: #291B44;
+    &__h1 {
+        color: $colorAzul;
         text-align: center;
         font-size: 4rem;
-        font-family: 'Gilroy-Heavy', sans-serif;  
+        font-family: $fuenteHeavy;  
         letter-spacing: 3px;
     }
-    span{
-        color: #00C8CC;
-        font-family: 'Gilroy-Heavy', sans-serif;
+    &__span{
+        color: $colorVerde;
+        font-family: $fuenteHeavy;
     }
-    p{
+    &__texto{
         margin: 1.5rem 0;
         font-size: 1.2rem;
     }
@@ -128,30 +133,30 @@
     a{
         text-decoration: none;
     }
-    h5{
+    &__h5{
         font-family: $fuenteNegrita;
         color: #291B44;
         font-size: 2rem;
     }
-    .icono{
+    &__icono{
         margin-top: 1rem;
         font-size: 4rem;
-        color: #02CDD0;
+        color: $colorVerde;
     }
 }
 .containerIELTS-skills{
-    p{
+    &__texto{
         font-size: 1.2rem;
     }
-    li{
+    &__lista{
         font-size: 1.2rem;
     }
-    h5{
-        border: 2px solid #00C8CC;
+    &__h5{
+        border: 2px solid $colorVerde;
         height: 3rem;
         margin-top: 5rem;
         font-family: $fuenteNegrita;
-        color: #291B44;
+        color: $colorAzul;
         font-size: 2rem;
     }
 }  
@@ -159,25 +164,26 @@
 //working holiday//
 .containerWH{
     margin: 4rem 4rem;
-    h1{
-        color: #291B44;
+    &__h1{
+        color: $colorAzul;
         text-align: center;
         font-size: 4rem;
-        font-family: 'Gilroy-Heavy', sans-serif;  
+        font-family: $fuenteHeavy;  
         letter-spacing: 3px;
     } 
-    span{
+    &__span{
         color: $colorVerde;
-        font-family: 'Gilroy-Heavy', sans-serif;
+        font-family: $fuenteHeavy;
     } 
-    p{
+    &__texto{
         margin: 1.5rem 0;
         font-size: 1.2rem;
     }
-    .accordion-item{
+   .accordion-item{
         font-size: 1.2rem;
+        color: $colorAzul;
     }
-    .accordion-button {
+   .accordion-button {
         color: $colorAzul;
         font-family: $fuenteNegrita;
         background-color:$colorVerde;
@@ -191,42 +197,55 @@
 
 .containerTarifas{
     margin: 4rem 0rem;
-    h1{
+    &__h1{
         color: #291B44;
         text-align: center;
         font-size: 4rem;
-        font-family: 'Gilroy-Heavy', sans-serif;  
+        font-family: $fuenteHeavy;  
         letter-spacing: 3px;
     } 
-    p{
+    &__texto{
         margin: 1.5rem 0;
         font-size: 1.2rem;
     }
-    span{
-        color: #00C8CC;
-        font-family: 'Gilroy-Heavy', sans-serif;
+    &__span{
+        color: $colorVerde;
+        font-family: $fuenteHeavy;
     } 
-    .cursos__tarjeta{
+    .cursos{
         margin: 1rem;
         text-align: center;
         display: flex;
         align-items: center;
-        img{
+        &__img{
             width: 80%;
         }
+        &__h5{
+            font-family: $fuenteNegrita;
+            color:$colorAzul;
+        }
+        &__texto{
+            font-size: 1.2rem;
+        }
     }
-    p{
+    .descripcionCurso{
+        &__texto{
+            font-size: 1.2rem;
+            font-family: $fuenteNegrita;
+            color:$colorAzul;
+        }
+
+        &__lista{
         font-size: 1.2rem;
-    }
-    li{
-        font-size: 1.2rem;
+        color:$colorAzul;
+        }
     }
 }
 
 //contacto//
 .formulario{
     margin-top: 4rem 0;
-    h1{
+    &__h1{
         font-family: $fuenteNegrita;  
         letter-spacing: 1px;
         font-size: 2.5rem;
@@ -234,7 +253,7 @@
         text-align: center;
         margin-top: 2rem;
     }
-    p{
+    &__texto{
         font-family: $fuenteNormal;  
         letter-spacing: 1px;
         font-size: 1.7rem;
@@ -262,10 +281,6 @@
 #floatingTextarea{
     height: 300px;
 }
-
-
-
-
 
 
 
