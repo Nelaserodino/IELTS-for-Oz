@@ -3,18 +3,17 @@
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
-}
-body{
     @font-face {
-        font-family:'Gilroy-Bold', sans-serif; ;
-        src: url(/fuentes/Gilroy-Bold.ttf);
-    }
-    @font-face {
-        font-family: 'Gilroy-Regular', sans-serif;
+        font-family: 'Gilroy-Regular';
         src: url(/fuentes/Gilroy-Light.ttf);
     }
     @font-face {
-        font-family: 'Gilroy-Heavy', sans-serif;
+        font-family: 'Gilroy-Bold';
+        src: url(/fuentes/Gilroy-Bold.ttf);
+    }
+    @font-face {
+        font-family: 'Gilroy-Heavy';
         src: url(/fuentes/Gilroy-Heavy.ttf);
     }
 }
+

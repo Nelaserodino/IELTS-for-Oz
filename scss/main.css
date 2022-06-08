@@ -7,22 +7,22 @@
 }
 
 @font-face {
-  body {
-    font-family: 'Gilroy-Bold', sans-serif;
-    src: url(/fuentes/Gilroy-Bold.ttf);
-  }
-}
-
-@font-face {
-  body {
-    font-family: 'Gilroy-Regular', sans-serif;
+  * {
+    font-family: 'Gilroy-Regular';
     src: url(/fuentes/Gilroy-Light.ttf);
   }
 }
 
 @font-face {
-  body {
-    font-family: 'Gilroy-Heavy', sans-serif;
+  * {
+    font-family: 'Gilroy-Bold';
+    src: url(/fuentes/Gilroy-Bold.ttf);
+  }
+}
+
+@font-face {
+  * {
+    font-family: 'Gilroy-Heavy';
     src: url(/fuentes/Gilroy-Heavy.ttf);
   }
 }
@@ -39,7 +39,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Gilroy-Regular", sans-serif;
+  font-family: "Gilroy-Regular";
 }
 
 #header .mostrar-menu {
@@ -96,7 +96,7 @@
 
 #header .header__menu .header__link {
   padding: 0.9rem;
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: "Gilroy-Bold";
   color: #291B44;
   font-size: 1.3rem;
   -webkit-transition: 0.4s;
@@ -129,20 +129,20 @@
 
 .banner__span {
   font-size: 4rem;
-  font-family: "Gilroy-Heavy", sans-serif;
+  font-family: "Gilroy-Heavy";
   letter-spacing: 3px;
   color: #ffffff;
 }
 
 .banner__titulo {
   font-size: 4rem;
-  font-family: "Gilroy-Heavy", sans-serif;
+  font-family: "Gilroy-Heavy";
   letter-spacing: 3px;
 }
 
 .banner__subtitulo {
   font-size: 1.8rem;
-  font-family: "Gilroy-Regular", sans-serif;
+  font-family: "Gilroy-Regular";
   text-align: right;
 }
 
@@ -159,26 +159,26 @@
 
 .descripcionIndex__h2 {
   color: #291B44;
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: "Gilroy-Bold";
   letter-spacing: 1px;
   font-size: 2rem;
 }
 
 .descripcionIndex__span {
   color: #02CDD0;
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: "Gilroy-Bold";
 }
 
 .descripcionIndex__p {
   font-size: 1.4rem;
-  font-family: "Gilroy-Regular", sans-serif;
+  font-family: "Gilroy-Regular";
 }
 
 .descripcionIndex__boton {
   border: none;
   background-color: #291B44;
   color: white;
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: "Gilroy-Bold";
   letter-spacing: 1px;
 }
 
@@ -194,19 +194,19 @@
 
 .sobreMi__h2 {
   color: #291B44;
-  font-family: "Gilroy-Heavy", sans-serif;
+  font-family: "Gilroy-Heavy";
   letter-spacing: 1px;
   font-size: 2rem;
 }
 
 .sobreMi__span {
   color: #02CDD0;
-  font-family: "Gilroy-Heavy", sans-serif;
+  font-family: "Gilroy-Heavy";
 }
 
 .sobreMi__p {
   font-size: 1.4rem;
-  font-family: "Gilroy-Regular", sans-serif;
+  font-family: "Gilroy-Regular";
 }
 
 .sobreMi__img {
@@ -215,7 +215,7 @@
 }
 
 .testimonio {
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: "Gilroy-Bold";
   letter-spacing: 1px;
   font-size: 2rem;
 }
@@ -239,7 +239,7 @@
 .testimonio__tarjeta__texto {
   text-align: center;
   color: #291B44;
-  font-family: "Gilroy-Regular", sans-serif;
+  font-family: "Gilroy-Regular";
 }
 
 .containerIELTS {
@@ -250,18 +250,19 @@
   color: #291B44;
   text-align: center;
   font-size: 4rem;
-  font-family: "Gilroy-Heavy", sans-serif;
+  font-family: "Gilroy-Heavy";
   letter-spacing: 3px;
 }
 
 .containerIELTS__span {
   color: #02CDD0;
-  font-family: "Gilroy-Heavy", sans-serif;
+  font-family: "Gilroy-Heavy";
 }
 
 .containerIELTS__texto {
   margin: 1.5rem 0;
   font-size: 1.2rem;
+  font-family: "Gilroy-Regular";
 }
 
 .efectoTarjetas {
@@ -280,7 +281,7 @@
 }
 
 .efectoTarjetas__h5 {
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: "Gilroy-Bold";
   color: #291B44;
   font-size: 2rem;
 }
@@ -293,17 +294,19 @@
 
 .containerIELTS-skills__texto {
   font-size: 1.2rem;
+  font-family: "Gilroy-Regular";
 }
 
 .containerIELTS-skills__lista {
   font-size: 1.2rem;
+  font-family: "Gilroy-Regular";
 }
 
 .containerIELTS-skills__h5 {
   border: 2px solid #02CDD0;
   height: 3rem;
   margin-top: 5rem;
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: "Gilroy-Bold";
   color: #291B44;
   font-size: 2rem;
 }
@@ -316,28 +319,31 @@
   color: #291B44;
   text-align: center;
   font-size: 4rem;
-  font-family: "Gilroy-Heavy", sans-serif;
+  font-family: "Gilroy-Heavy";
   letter-spacing: 3px;
 }
 
 .containerWH__span {
   color: #02CDD0;
-  font-family: "Gilroy-Heavy", sans-serif;
+  font-family: "Gilroy-Heavy";
 }
 
 .containerWH__texto {
   margin: 1.5rem 0;
   font-size: 1.2rem;
+  font-family: "Gilroy-Regular";
+  color: #291B44;
 }
 
 .containerWH .accordion-item {
   font-size: 1.2rem;
   color: #291B44;
+  font-family: "Gilroy-Regular";
 }
 
 .containerWH .accordion-button {
   color: #291B44;
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: "Gilroy-Bold";
   background-color: #02CDD0;
   border-color: white;
   -webkit-box-shadow: none;
@@ -353,18 +359,19 @@
   color: #291B44;
   text-align: center;
   font-size: 4rem;
-  font-family: "Gilroy-Heavy", sans-serif;
+  font-family: "Gilroy-Heavy";
   letter-spacing: 3px;
 }
 
 .containerTarifas__texto {
   margin: 1.5rem 0;
   font-size: 1.2rem;
+  font-family: "Gilroy-Regular";
 }
 
 .containerTarifas__span {
   color: #02CDD0;
-  font-family: "Gilroy-Heavy", sans-serif;
+  font-family: "Gilroy-Heavy";
 }
 
 .containerTarifas .cursos {
@@ -383,23 +390,26 @@
 }
 
 .containerTarifas .cursos__h5 {
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: "Gilroy-Bold";
   color: #291B44;
 }
 
 .containerTarifas .cursos__texto {
   font-size: 1.2rem;
+  font-family: "Gilroy-Regular";
+  color: #291B44;
 }
 
 .containerTarifas .descripcionCurso__texto {
   font-size: 1.2rem;
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: "Gilroy-Bold";
   color: #291B44;
 }
 
 .containerTarifas .descripcionCurso__lista {
   font-size: 1.2rem;
   color: #291B44;
+  font-family: "Gilroy-Regular";
 }
 
 .formulario {
@@ -407,7 +417,7 @@
 }
 
 .formulario__h1 {
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: "Gilroy-Bold";
   letter-spacing: 1px;
   font-size: 2.5rem;
   color: #291B44;
@@ -416,7 +426,7 @@
 }
 
 .formulario__texto {
-  font-family: "Gilroy-Regular", sans-serif;
+  font-family: "Gilroy-Regular";
   letter-spacing: 1px;
   font-size: 1.7rem;
   text-align: center;
@@ -425,7 +435,7 @@
 
 .form-control {
   border: #291B44 1px solid;
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: "Gilroy-Bold";
   letter-spacing: 1px;
   font-size: 1.3rem;
   color: #291B44;
@@ -434,7 +444,7 @@
 .formulario__boton {
   border: none;
   background-color: #02CDD0;
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: "Gilroy-Bold";
 }
 
 .formulario__boton:hover {
