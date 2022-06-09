@@ -4,21 +4,7 @@
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-@font-face {
-    font-family: 'Gilroy-Regular' sans-serif;
-    src: url(/fuentes/Gilroy-Light.ttf);
-}
-
-@font-face {
-    font-family: 'Gilroy-Bold' sans-serif;
-    src: url(/fuentes/Gilroy-Bold.ttf);
-}
-
-@font-face {
-    font-family: 'Gilroy-Heavy' sans-serif;
-    src: url(/fuentes/Gilroy-Heavy.ttf);
+  font-family: Gilroy;
 }
 
 #header {
@@ -115,7 +101,7 @@
 }
 
 .banner {
-  background-image: url(../img/pexels-rebecca-kate-4604963.jpg);
+  background-image: url(/img/pexels-rebecca-kate-4604963.jpg);
   background-size: cover;
   padding: 14rem 3rem;
   color: #291B44;
@@ -209,17 +195,18 @@
 }
 
 .testimonio {
-  font-family: "Gilroy-Bold";
   letter-spacing: 1px;
   font-size: 2rem;
 }
 
 .testimonio__h2 {
   color: #291B44;
+  font-family: "Gilroy-Heavy";
 }
 
 .testimonio__span {
   color: #02CDD0;
+  font-family: "Gilroy-Heavy";
 }
 
 .testimonio__tarjeta__img {

@@ -80,15 +80,16 @@
     }
 }
 
-.testimonio{
-    font-family: $fuenteNegrita;  
+.testimonio{ 
     letter-spacing: 1px;
     font-size: 2rem;
     &__h2{
         color: $colorAzul;
+        font-family: $fuenteHeavy; 
     }
     &__span{
-        color: $colorVerde;   
+        color: $colorVerde; 
+        font-family: $fuenteHeavy;   
     }
 }
 .testimonio__tarjeta{  
