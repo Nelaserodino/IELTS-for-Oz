@@ -272,7 +272,7 @@
   color: #02CDD0;
 }
 
-.containerIELTS-skills__h5 {
+.containerIELTS-skills__h2 {
   border: 2px solid #02CDD0;
   height: 3rem;
   margin-top: 5rem;
@@ -709,7 +709,7 @@
   .efectoTarjetas__icono {
     font-size: 3rem;
   }
-  .efectoTarjetas__h5 {
+  .efectoTarjetas__h2 {
     font-size: 1.2rem;
   }
   .efectoTarjetas:hover {
@@ -737,7 +737,7 @@
   .containerIELTS-skills__lista {
     font-size: 0.9rem;
   }
-  .containerIELTS-skills__h5 {
+  .containerIELTS-skills__h2 {
     font-size: 1.4rem;
     height: 2.5rem;
   }
@@ -863,7 +863,7 @@
     font-size: 2rem;
     text-align: center;
   }
-  .efectoTarjetas h5 {
+  .efectoTarjetas h2 {
     font-size: 1.4rem;
   }
   .containerIELTS-skills {
