@@ -23,16 +23,16 @@
             z-index: 100;
             transition: 0.8s;
             display: block;
-        }
-        .header__link{
-            padding: 20px;
-            display: block;   
-        }
-        .esconder-menu{
-            display: block;
-            position: absolute;
-            top: 40px;
-            right: 40px;
+            .header__link{
+                padding: 20px;
+                display: block;   
+            }
+            .esconder-menu{
+                display: block;
+                position: absolute;
+                top: 40px;
+                right: 40px;
+            }
         }
     }     
 
@@ -107,11 +107,10 @@
             width: 30%;
         }
     }
-    
 
     //ietls//
     .containerIELTS{
-        margin: 4rem 0;
+        margin: 1rem;
         &__h1{
             font-size: 2.5rem;
         }
@@ -138,36 +137,30 @@
         justify-content: center;
         width: 70%;
     }
-    .containerIELTS-skills{
-        &__texto{
-            font-size: 0.9rem; 
-        }
-        &__lista{
-            font-size: 0.9rem;
-        }
-        &__h5{
-            font-size: 1.4rem;
-            height: 2.5rem;
-        }
-    }
     
     
     //WH//
     .containerWH {
+        margin: 1rem;
         &__h1{
             font-size: 2.5rem;
         }
+        &__texto{
+            font-size: 1.2rem;
+        }
     }
+
     //cursos//
     .containerTarifas {
+        margin: 1rem;
         &__h1{
             font-size: 2.5rem;
             } 
         &__texto{
             font-size: 1.2rem;
             }
-        }
-    .cursos{
+    }
+    .card-group{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -175,9 +168,8 @@
         &__img{
             width: 50%;
         }
-    } 
-}     
-    
+    }   
+}
 
     
 /*tablet*/
@@ -190,7 +182,6 @@
         .mostrar-menu{
             display: block;
         }
-        
         .header__menu{
             position: fixed;
             width: 100%;
@@ -283,13 +274,15 @@
             width: 30%;
         }
     }
+
+
+     //ielts//
     .containerIELTS{
-        margin: 4rem 0;
+        margin: 1rem;
         &__h1{
             font-size: 2.5rem;
         }
         &__texto{
-            margin: 1.5rem 0;
             font-size: 1.2rem;
         }
     }
@@ -323,8 +316,21 @@
             height: 2.5rem;
         }
     }
+
+    //WH//
+    .containerWH {
+        margin: 1rem;
+        &__h1{
+            font-size: 2.5rem;
+        }
+        &__texto{
+            font-size: 1.2rem;
+        }
+    }
     
+    //Cursos//
     .containerTarifas {
+        margin: 1rem;
         &__h1{
         font-size: 2.5rem;
         } 
@@ -332,15 +338,15 @@
         font-size: 1.2rem;
         }
         }
-    .cursos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        &__img{
-        width: 50%;
-        }
-    }  
+        .card-group{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            &__img{
+                width: 50%;
+            }
+        } 
 }
 
 
