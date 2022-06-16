@@ -20,7 +20,7 @@
         border: $colorAzul 2px solid;
         border-radius: 15px 50px 30px;
     }
-    &__h2{
+    &__h3{
         color: $colorAzul; 
     }
     &__span{
@@ -32,7 +32,7 @@
 .sobreMi{
     margin: 15rem 0;
     color: $colorAzul;
-    &__h2{
+    &__h3{
         color: $colorAzul;
         font-family: $fuenteHeavy;  
         letter-spacing: 1px;
@@ -51,7 +51,7 @@
 .testimonio{ 
     letter-spacing: 1px;
     font-size: 2rem;
-    &__h2{
+    &__h3{
         color: $colorAzul;
         font-family: $fuenteHeavy; 
     }
@@ -77,7 +77,7 @@
 //IELTS//
 .containerIELTS{
     margin: 4rem 0;
-    &__h1 {
+    &__h2 {
         text-align: center;
     }
     &__texto{
@@ -99,7 +99,7 @@
         color: $colorVerde;
     }
 }
-.containerIELTS-skills__h2{
+.containerIELTS-skills__h3{
         border: 2px solid $colorVerde;
         height: 3rem;
         margin-top: 5rem;
@@ -108,7 +108,7 @@
 //working holiday//
 .containerWH{
     margin: 4rem 4rem;
-    &__h1{
+    &__h2{
         text-align: center;
     } 
     a{
@@ -130,7 +130,7 @@
 
 .containerTarifas{
     margin: 4rem 0rem;
-    &__h1{
+    &__h2{
         text-align: center;
     } 
     .cursos{
@@ -147,7 +147,7 @@
 //contacto//
 .formulario{
     margin-top: 4rem 0;
-    &__h1{
+    &__h2{
         font-size: 2.5rem;
         text-align: center;
         margin-top: 2rem;

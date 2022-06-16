@@ -155,7 +155,7 @@
 }
 
 .banner {
-  background-image: url(../img/pexels-rebecca-kate-4604963.jpg);
+  background-image: url(/img/pexels-rebecca-kate-4604963.jpg);
   background-size: cover;
   padding: 14rem 3rem;
   color: #291B44;
@@ -180,7 +180,7 @@
   border-radius: 15px 50px 30px;
 }
 
-.descripcionIndex__h2 {
+.descripcionIndex__h3 {
   color: #291B44;
 }
 
@@ -194,7 +194,7 @@
   color: #291B44;
 }
 
-.sobreMi__h2 {
+.sobreMi__h3 {
   color: #291B44;
   font-family: "Gilroy-Heavy";
   letter-spacing: 1px;
@@ -216,7 +216,7 @@
   font-size: 2rem;
 }
 
-.testimonio__h2 {
+.testimonio__h3 {
   color: #291B44;
   font-family: "Gilroy-Heavy";
 }
@@ -244,7 +244,7 @@
   margin: 4rem 0;
 }
 
-.containerIELTS__h1 {
+.containerIELTS__h2 {
   text-align: center;
 }
 
@@ -273,7 +273,7 @@
   color: #02CDD0;
 }
 
-.containerIELTS-skills__h2 {
+.containerIELTS-skills__h3 {
   border: 2px solid #02CDD0;
   height: 3rem;
   margin-top: 5rem;
@@ -283,7 +283,7 @@
   margin: 4rem 4rem;
 }
 
-.containerWH__h1 {
+.containerWH__h2 {
   text-align: center;
 }
 
@@ -307,7 +307,7 @@
   margin: 4rem 0rem;
 }
 
-.containerTarifas__h1 {
+.containerTarifas__h2 {
   text-align: center;
 }
 
@@ -330,7 +330,7 @@
   margin-top: 4rem 0;
 }
 
-.formulario__h1 {
+.formulario__h2 {
   font-size: 2.5rem;
   text-align: center;
   margin-top: 2rem;
@@ -458,7 +458,7 @@
   .descripcionIndex__img {
     margin: 2rem 0;
   }
-  .descripcionIndex__h2 {
+  .descripcionIndex__h3 {
     font-size: 1.4rem;
     text-align: center;
   }
@@ -477,7 +477,7 @@
             flex-direction: column;
     flex-direction: column-reverse;
   }
-  .sobreMi__h2 {
+  .sobreMi__h3 {
     font-size: 1.4rem;
     text-align: center;
   }
@@ -497,7 +497,7 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .testimonio__h2 {
+  .testimonio__h3 {
     font-size: 1.4rem;
     text-align: center;
   }
@@ -510,7 +510,7 @@
   .containerIELTS {
     margin: 1rem;
   }
-  .containerIELTS__h1 {
+  .containerIELTS__h2 {
     font-size: 2.5rem;
   }
   .containerIELTS__texto {
@@ -520,7 +520,7 @@
   .efectoTarjetas__icono {
     font-size: 3rem;
   }
-  .efectoTarjetas__h5 {
+  .efectoTarjetas h3 {
     font-size: 1.5rem;
   }
   .efectoTarjetas:hover {
@@ -545,7 +545,7 @@
   .containerWH {
     margin: 1rem;
   }
-  .containerWH__h1 {
+  .containerWH__h2 {
     font-size: 2.5rem;
   }
   .containerWH__texto {
@@ -554,7 +554,7 @@
   .containerTarifas {
     margin: 1rem;
   }
-  .containerTarifas__h1 {
+  .containerTarifas__h2 {
     font-size: 2.5rem;
   }
   .containerTarifas__texto {
@@ -649,7 +649,7 @@
   .descripcionIndex__img {
     margin: 2rem 0;
   }
-  .descripcionIndex__h2 {
+  .descripcionIndex__h3 {
     font-size: 1.4rem;
     text-align: center;
   }
@@ -668,7 +668,7 @@
             flex-direction: column;
     flex-direction: column-reverse;
   }
-  .sobreMi__h2 {
+  .sobreMi__h3 {
     font-size: 1.4rem;
     text-align: center;
   }
@@ -688,7 +688,7 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .testimonio__h2 {
+  .testimonio__h3 {
     font-size: 1.4rem;
     text-align: center;
   }
@@ -701,7 +701,7 @@
   .containerIELTS {
     margin: 1rem;
   }
-  .containerIELTS__h1 {
+  .containerIELTS__h2 {
     font-size: 2.5rem;
   }
   .containerIELTS__texto {
@@ -710,7 +710,7 @@
   .efectoTarjetas__icono {
     font-size: 3rem;
   }
-  .efectoTarjetas__h2 {
+  .efectoTarjetas h3 {
     font-size: 1.2rem;
   }
   .efectoTarjetas:hover {
@@ -738,14 +738,14 @@
   .containerIELTS-skills__lista {
     font-size: 0.9rem;
   }
-  .containerIELTS-skills__h2 {
+  .containerIELTS-skills__h3 {
     font-size: 1.4rem;
     height: 2.5rem;
   }
   .containerWH {
     margin: 1rem;
   }
-  .containerWH__h1 {
+  .containerWH__h2 {
     font-size: 2.5rem;
   }
   .containerWH__texto {
@@ -754,7 +754,7 @@
   .containerTarifas {
     margin: 1rem;
   }
-  .containerTarifas__h1 {
+  .containerTarifas__h2 {
     font-size: 2.5rem;
   }
   .containerTarifas__texto {
@@ -825,7 +825,7 @@
             flex-direction: column;
     margin-bottom: 2rem;
   }
-  .descripcionIndex .descripcionIndex__h2 {
+  .descripcionIndex .descripcionIndex__h3 {
     font-size: 2rem;
     text-align: center;
   }
@@ -856,15 +856,15 @@
   .sobreMi__img {
     margin-bottom: 2rem;
   }
-  .sobreMi h2 {
+  .sobreMi h3 {
     font-size: 2rem;
     text-align: center;
   }
-  .testimonio__h2 {
+  .testimonio__h3 {
     font-size: 2rem;
     text-align: center;
   }
-  .efectoTarjetas h2 {
+  .efectoTarjetas h3 {
     font-size: 1.4rem;
   }
   .containerIELTS-skills {
