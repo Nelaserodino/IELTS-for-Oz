@@ -13,6 +13,7 @@
     @include font(1.8rem, $fuenteNegrita, 1px, $colorAzul);
 }
 
+
 .letraTitulo{
     @include font(4rem, $fuenteHeavy, 3px, $colorAzul);
 }
