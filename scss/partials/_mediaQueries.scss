@@ -2,6 +2,9 @@
 /*celular*/
 
 @media only screen and (max-width:575px) {
+    .letraDescripcion{
+        font-size: 1.2rem;
+    }
   
     #header{
         padding: 20px 50px;
@@ -68,7 +71,7 @@
             text-align: center; 
         }
         &__p{
-            font-size: 1rem;
+            font-size: 1.2rem;
             text-align: center; 
         }
     }
@@ -82,7 +85,7 @@
             text-align: center; 
         }
         &__p{
-            font-size: 1rem;
+            font-size: 1.2rem;
             text-align: center; 
         } 
         &__img{
@@ -116,7 +119,7 @@
         }
         &__texto{
             margin: 1.5rem 0;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
     }
     .efectoTarjetas {
@@ -136,6 +139,9 @@
         align-content: center;
         justify-content: center;
         width: 70%;
+    }
+    .containerIELTS-skills{
+        width: 100%;
     }
     
     
@@ -160,7 +166,7 @@
             font-size: 1.2rem;
             }
     }
-    .card-group{
+    .containerCursos{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -168,12 +174,19 @@
         &__img{
             width: 50%;
         }
-    }   
+    }  
+    //contacto//
+    .containerFormulario{
+        width: 90%;
+    } 
 }
 
     
 /*tablet*/
 @media only screen and (min-width:576px) and (max-width:767px){ 
+    .letraDescripcion{
+        font-size: 1.2rem;
+    }
    #header{
         padding: 20px 50px;
         #check:checked ~ .header__menu{
@@ -285,6 +298,10 @@
         &__texto{
             font-size: 1.2rem;
         }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
     .efectoTarjetas {
         &__icono{
@@ -305,16 +322,7 @@
         width: 70%;
     }
     .containerIELTS-skills{
-        &__texto{
-            font-size: 0.9rem; 
-        }
-        &__lista{
-            font-size: 0.9rem;
-        }
-        &__h3{
-            font-size: 1.4rem;
-            height: 2.5rem;
-        }
+        width: 90%;
     }
 
     //WH//
