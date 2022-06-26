@@ -1,3 +1,4 @@
+
 //INDEX//
 .banner{
     background-image: url(/img/pexels-rebecca-kate-4604963.jpg);
@@ -85,10 +86,11 @@
     }
 }
 .efectoTarjetas{
-    transition: all 0.4s;
+    transition: box-shadow 0.5s, transform 0.5s;
     margin: 1rem;
     &:hover{
-        transform: translateY(-5%);
+        transform: scale(1.10);
+    
     }
     a{
         text-decoration: none;
@@ -133,16 +135,23 @@
     &__h2{
         text-align: center;
     } 
+    .containerTarjetasCursos{
+        display: flex;
+    }
     .cursos{
         margin: 1rem;
-        text-align: center;
         display: flex;
+        flex-direction:column;
+        text-align: center;
         align-items: center;
+        transition: box-shadow 0.5s, transform 0.5s;
+        &:hover{
+            transform: scale(1.05);
+        }
         &__img{
             width: 80%;
         }
     }
-    
 }
 
 //contacto//
@@ -165,13 +174,3 @@
 #floatingTextarea{
     height: 300px;
 }
-
-
-
-
-
-
-
-
-
-

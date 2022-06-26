@@ -267,14 +267,16 @@
 }
 
 .efectoTarjetas {
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
   margin: 1rem;
 }
 
 .efectoTarjetas:hover {
-  -webkit-transform: translateY(-5%);
-          transform: translateY(-5%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .efectoTarjetas a {
@@ -325,15 +327,34 @@
   text-align: center;
 }
 
-.containerTarifas .cursos {
-  margin: 1rem;
-  text-align: center;
+.containerTarifas .containerTarjetasCursos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.containerTarifas .cursos {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+}
+
+.containerTarifas .cursos:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .containerTarifas .cursos__img {
@@ -532,7 +553,7 @@
   }
   .containerIELTS__texto {
     margin: 1.5rem 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .efectoTarjetas__icono {
     font-size: 3rem;
@@ -580,7 +601,7 @@
   .containerTarifas__texto {
     font-size: 1.2rem;
   }
-  .containerCursos {
+  .containerTarifas .containerTarjetasCursos {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -588,15 +609,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .containerCursos__img {
-    width: 50%;
   }
   .containerFormulario {
     width: 90%;
@@ -790,7 +802,7 @@
   .containerTarifas__texto {
     font-size: 1.2rem;
   }
-  .card-group {
+  .containerTarifas .containerTarjetasCursos {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -798,15 +810,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .card-group__img {
-    width: 50%;
   }
 }
 
@@ -899,6 +902,15 @@
   }
   .containerIELTS-skills {
     font-size: 1.4rem;
+  }
+  .containerTarjetasCursos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

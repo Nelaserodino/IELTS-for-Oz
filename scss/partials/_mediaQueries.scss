@@ -119,7 +119,7 @@
         }
         &__texto{
             margin: 1.5rem 0;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
     }
     .efectoTarjetas {
@@ -157,24 +157,22 @@
     }
 
     //cursos//
-    .containerTarifas {
+    .containerTarifas{
         margin: 1rem;
         &__h2{
             font-size: 2.5rem;
-            } 
+        }
         &__texto{
             font-size: 1.2rem;
-            }
-    }
-    .containerCursos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        &__img{
-            width: 50%;
         }
-    }  
+        .containerTarjetasCursos{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+   
+    
     //contacto//
     .containerFormulario{
         width: 90%;
@@ -345,16 +343,12 @@
         &__texto{
         font-size: 1.2rem;
         }
-        }
-        .card-group{
+        .containerTarjetasCursos{
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            &__img{
-                width: 50%;
-            }
-        } 
+        }
+    }
+        
 }
 
 
@@ -437,6 +431,10 @@
     }
     .containerIELTS-skills{
         font-size: 1.4rem;
+    }
+    .containerTarjetasCursos{
+        display: flex;
+        flex-direction: column;
     }
 }
 
