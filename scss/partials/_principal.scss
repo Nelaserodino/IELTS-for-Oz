@@ -1,4 +1,5 @@
 
+
 //INDEX//
 .banner{
     background-image: url(/img/pexels-rebecca-kate-4604963.jpg);
@@ -77,6 +78,9 @@
 
 //IELTS//
 .containerIELTS{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 4rem;
     &__h2 {
         text-align: center;
@@ -84,28 +88,31 @@
     &__texto{
         margin: 1.5rem 0;
     }
+    .efectoTarjetas{
+        transition: box-shadow 0.5s, transform 0.5s;
+        margin: 1rem;
+        &:hover{
+            transform: scale(1.10);
+        }
+        a{
+            text-decoration: none;
+        }
+        &__icono{
+            margin-top: 1rem;
+            font-size: 4rem;
+            color: $colorVerde;
+        }
+    }
+    .containerIELTS-skills{
+        width: 90%;
+    }
+    .containerIELTS-skills__h3{
+            border: 2px solid $colorVerde;
+            height: 3rem;
+            margin-top: 5rem;
+    } 
 }
-.efectoTarjetas{
-    transition: box-shadow 0.5s, transform 0.5s;
-    margin: 1rem;
-    &:hover{
-        transform: scale(1.10);
-    
-    }
-    a{
-        text-decoration: none;
-    }
-    &__icono{
-        margin-top: 1rem;
-        font-size: 4rem;
-        color: $colorVerde;
-    }
-}
-.containerIELTS-skills__h3{
-        border: 2px solid $colorVerde;
-        height: 3rem;
-        margin-top: 5rem;
-}  
+ 
 
 //working holiday//
 .containerWH{

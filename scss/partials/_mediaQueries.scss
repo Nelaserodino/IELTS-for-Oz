@@ -41,79 +41,84 @@
 
 
     /*index*/
-    .banner{
-        padding: 7rem 2rem;
-        &__titulo{
-            font-size: 2.5rem;
-        }
-        &__span{
-            font-size: 2.5rem;
-        }
-        
-        &__subtitulo{
-            font-size: 1.4rem;
-        }
-    }
-
-    .descripcionIndex{
-        margin: 3rem 0;
-        display: flex;
-        flex-direction: column;
-        .descricpion__img-container{
-            display: flex;
-            justify-content: center;
-        }
-        &__img{
-            margin: 2rem 0;
-        }
-        &__h3{    
-            font-size: 1.4rem;
-            text-align: center; 
-        }
-        &__p{
-            font-size: 1.2rem;
-            text-align: center; 
-        }
-    }
-    .sobreMi{
-        margin: 3rem 0;
-        display: flex;
-        flex-direction: column;
-        flex-direction: column-reverse;
-        &__h3{    
-            font-size: 1.4rem;
-            text-align: center; 
-        }
-        &__p{
-            font-size: 1.2rem;
-            text-align: center; 
-        } 
-        &__img{
-            margin: 2rem 0;
-        }
-    }
-    .testimonio{
+    .seccionIndex{
         width: 80%;
         display: flex;
-        justify-content: center;
-        &__h3{    
-            font-size: 1.4rem;
-            text-align: center; 
+        .banner{
+            padding: 7rem 2rem;
+            &__titulo{
+                font-size: 2.5rem;
+            }
+            &__span{
+                font-size: 2.5rem;
+            }
+            
+            &__subtitulo{
+                font-size: 1.4rem;
+            }
+        }
+    
+        .descripcionIndex{
+            margin: 3rem 0;
+            display: flex;
+            flex-direction: column;
+            .descricpion__img-container{
+                display: flex;
+                justify-content: center;
+            }
+            &__img{
+                margin: 2rem 0;
+            }
+            &__h3{    
+                font-size: 1.4rem;
+                text-align: center; 
+            }
+            &__p{
+                font-size: 1.2rem;
+                text-align: center; 
+            }
+        }
+        .sobreMi{
+            margin: 3rem 0;
+            display: flex;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            &__h3{    
+                font-size: 1.4rem;
+                text-align: center; 
+            }
+            &__p{
+                font-size: 1.2rem;
+                text-align: center; 
+            } 
+            &__img{
+                margin: 2rem 0;
+            }
+        }
+        .testimonio{
+            margin: 3rem 0;
+            display: flex;
+            justify-content: center;
+            &__h3{    
+                font-size: 1.4rem;
+                text-align: center; 
+            }
+        }
+       
+        .testimonio__tarjeta{  
+            &__img{
+                width: 40%;
+            }
+            &__estrellas{
+                width: 30%;
+            }
         }
     }
    
-    .testimonio__tarjeta{  
-        &__img{
-            width: 30%;
-        }
-        &__estrellas{
-            width: 30%;
-        }
-    }
 
     //ietls//
     .containerIELTS{
-        margin: 1rem;
+        margin: 0 3rem;
         &__h2{
             font-size: 2.5rem;
         }
@@ -121,33 +126,34 @@
             margin: 1.5rem 0;
             font-size: 1.2rem;
         }
-    }
-    .efectoTarjetas {
-        &__icono{
-            font-size: 3rem;
+        .efectoTarjetas {
+            width: 70%;
+            &__icono{
+                font-size: 3rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+            transition: box-shadow 0.5s, transform 0.5s;
+            &:hover{
+                transform: scale(1.03);
+            }
         }
-        h3 {
-            font-size: 1.5rem;
+        .containerIELTS__tarjetas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        &:hover{
-            transform: translateX(-5%);
+        .containerIELTS-skills{
+            width: 100%;
         }
     }
-    .containerIELTS__tarjetas{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        width: 70%;
-    }
-    .containerIELTS-skills{
-        width: 100%;
-    }
+    
     
     
     //WH//
     .containerWH {
-        margin: 1rem;
+        margin: 0 3rem;
         &__h2{
             font-size: 2.5rem;
         }
@@ -158,7 +164,7 @@
 
     //cursos//
     .containerTarifas{
-        margin: 1rem;
+        margin: 0 3rem;
         &__h2{
             font-size: 2.5rem;
         }
@@ -289,7 +295,7 @@
 
      //ielts//
     .containerIELTS{
-        margin: 1rem;
+        margin: 0 3rem;
         &__h2{
             font-size: 2.5rem;
         }
@@ -299,7 +305,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
     }
     .efectoTarjetas {
         &__icono{
@@ -308,15 +313,15 @@
         h3 {
             font-size: 1.2rem;
         }
+        transition: box-shadow 0.5s, transform 0.5s;
         &:hover{
-            transform: none;
+            transform: scale(1.10);
         }
     }
     .containerIELTS__tarjetas{
         display: flex;
         flex-direction: column;
         align-content: center;
-        justify-content: center;
         width: 70%;
     }
     .containerIELTS-skills{
@@ -325,7 +330,7 @@
 
     //WH//
     .containerWH {
-        margin: 1rem;
+        margin: 0 3rem;
         &__h2{
             font-size: 2.5rem;
         }
@@ -336,7 +341,7 @@
     
     //Cursos//
     .containerTarifas {
-        margin: 1rem;
+        margin: 0 3rem;
         &__h2{
         font-size: 2.5rem;
         } 
@@ -435,6 +440,15 @@
     .containerTarjetasCursos{
         display: flex;
         flex-direction: column;
+    }
+    .containerWH {
+        margin: 0 3rem;
+    }
+    .containerIELTS {
+        margin: 0 3rem;
+    }
+    .containerTarifas {
+        margin: 0 3rem;
     }
 }
 
