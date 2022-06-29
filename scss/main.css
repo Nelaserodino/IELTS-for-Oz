@@ -168,11 +168,6 @@
   color: white;
 }
 
-.blob {
-  position: absolute;
-  opacity: 0.8;
-}
-
 .banner {
   background-image: url(/img/pexels-rebecca-kate-4604963.jpg);
   background-size: cover;
@@ -384,6 +379,10 @@
 
 .containerTarifas .cursos__img {
   width: 80%;
+}
+
+.containerTarifas .descripcionCurso li {
+  list-style: none;
 }
 
 .formulario {

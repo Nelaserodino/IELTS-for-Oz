@@ -1,7 +1,4 @@
-.blob{
-    position: absolute;
-    opacity: 0.8;
-}
+
 //INDEX//
 .banner{
     background-image: url(/img/pexels-rebecca-kate-4604963.jpg);
@@ -166,6 +163,9 @@
         &__img{
             width: 80%;
         }
+    }
+    .descripcionCurso li {
+        list-style: none;
     }
 }
 
