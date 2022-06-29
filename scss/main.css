@@ -168,6 +168,11 @@
   color: white;
 }
 
+.blob {
+  position: absolute;
+  opacity: 0.8;
+}
+
 .banner {
   background-image: url(/img/pexels-rebecca-kate-4604963.jpg);
   background-size: cover;
@@ -191,7 +196,10 @@
 .descripcionIndex__img {
   width: 70%;
   border: #291B44 2px solid;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
   border-radius: 15px 50px 30px;
+  -webkit-box-shadow: 20px 20px 29px #aaaaaa, -20px -20px 29px #ffffff;
+          box-shadow: 20px 20px 29px #aaaaaa, -20px -20px 29px #ffffff;
 }
 
 .descripcionIndex__h3 {
@@ -222,6 +230,9 @@
 
 .sobreMi__img {
   border-radius: 50%;
+  background: linear-gradient(225deg, #f0f0f0, #cacaca);
+  -webkit-box-shadow: -26px 26px 52px #aaaaaa, 26px -26px 52px #ffffff;
+          box-shadow: -26px 26px 52px #aaaaaa, 26px -26px 52px #ffffff;
   width: 80%;
 }
 
@@ -400,14 +411,19 @@
 }
 
 .footer {
-  background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-  margin-top: 1rem;
-  padding: 2rem 0;
+  margin: 2rem 0 0 0;
+  padding: 2rem 0 1rem 2rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .footer a {
-  padding-left: 0.5rem;
+  padding-left: 1rem;
   text-decoration: none;
   color: #291B44;
   font-family: "Gilroy-Bold";
@@ -419,11 +435,62 @@
   -webkit-transition: 0.4s;
   transition: 0.4s;
   margin: 0.5rem;
+  position: relative;
 }
 
 .footer i:hover {
   -webkit-transform: translateX(-5%);
           transform: translateX(-5%);
+}
+
+.footer .infoFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 30px;
+}
+
+.footer .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 15px;
+}
+
+.footer .contactame {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .custom-shape-divider-bottom-1656493079 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.footer .custom-shape-divider-bottom-1656493079 svg {
+  position: relative;
+  display: block;
+  width: calc(107% + 1.3px);
+  height: 200px;
+}
+
+.footer .custom-shape-divider-bottom-1656493079 .shape-fill {
+  fill: #02CDD0;
 }
 
 .fa-instagram {

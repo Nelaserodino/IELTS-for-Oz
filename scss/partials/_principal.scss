@@ -1,5 +1,7 @@
-
-
+.blob{
+    position: absolute;
+    opacity: 0.8;
+}
 //INDEX//
 .banner{
     background-image: url(/img/pexels-rebecca-kate-4604963.jpg);
@@ -20,7 +22,10 @@
     &__img{
         width: 70%;
         border: $colorAzul 2px solid;
+        background: linear-gradient(145deg, #f0f0f0, #cacaca);
         border-radius: 15px 50px 30px;
+        box-shadow:  20px 20px 29px #aaaaaa,
+             -20px -20px 29px #ffffff;
     }
     &__h3{
         color: $colorAzul; 
@@ -46,6 +51,9 @@
     }
    &__img{
         border-radius: 50%;
+        background: linear-gradient(225deg, #f0f0f0, #cacaca);
+        box-shadow:  -26px 26px 52px #aaaaaa,
+             26px -26px 52px #ffffff;
         width: 80%;
     }
 }
