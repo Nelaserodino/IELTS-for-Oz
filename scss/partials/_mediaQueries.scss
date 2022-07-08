@@ -183,6 +183,22 @@
     .containerFormulario{
         width: 90%;
     } 
+
+    //footer//
+    .footer {
+        padding: 0;
+        justify-content: center;
+        .infoFooter{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 0px;
+        }
+        .redes {
+            padding-left: 0px;
+            align-items: center;
+        }
+    }
 }
 
     
