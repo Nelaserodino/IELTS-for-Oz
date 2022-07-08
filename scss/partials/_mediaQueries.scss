@@ -118,7 +118,7 @@
 
     //ietls//
     .containerIELTS{
-        margin: 0 3rem;
+        margin: 0 1rem;
         &__h2{
             font-size: 2.5rem;
         }
@@ -153,7 +153,7 @@
     
     //WH//
     .containerWH {
-        margin: 0 3rem;
+        margin: 0 1rem;
         &__h2{
             font-size: 2.5rem;
         }
@@ -164,7 +164,7 @@
 
     //cursos//
     .containerTarifas{
-        margin: 0 3rem;
+        margin: 0 1rem;
         &__h2{
             font-size: 2.5rem;
         }
@@ -174,6 +174,13 @@
         .containerTarjetasCursos{
             display: flex;
             flex-direction: column;
+            padding: 0;
+            .cursos {
+                margin: 0.5rem;
+            }
+        }
+        .descripcionCurso{
+            width: 100%;
         }
     }
     

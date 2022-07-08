@@ -632,7 +632,7 @@
     width: 30%;
   }
   .containerIELTS {
-    margin: 0 3rem;
+    margin: 0 1rem;
   }
   .containerIELTS__h2 {
     font-size: 2.5rem;
@@ -674,7 +674,7 @@
     width: 100%;
   }
   .containerWH {
-    margin: 0 3rem;
+    margin: 0 1rem;
   }
   .containerWH__h2 {
     font-size: 2.5rem;
@@ -683,7 +683,7 @@
     font-size: 1.2rem;
   }
   .containerTarifas {
-    margin: 0 3rem;
+    margin: 0 1rem;
   }
   .containerTarifas__h2 {
     font-size: 2.5rem;
@@ -699,6 +699,13 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0;
+  }
+  .containerTarifas .containerTarjetasCursos .cursos {
+    margin: 0.5rem;
+  }
+  .containerTarifas .descripcionCurso {
+    width: 100%;
   }
   .containerFormulario {
     width: 90%;
