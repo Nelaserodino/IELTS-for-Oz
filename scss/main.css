@@ -173,6 +173,7 @@
   background-size: cover;
   padding: 14rem 3rem;
   color: #291B44;
+  overflow: hidden;
 }
 
 .banner__span {
@@ -982,6 +983,9 @@
             flex-direction: column;
     margin-bottom: 2rem;
   }
+  .descripcionIndex .descripcionIndex__img {
+    width: 50%;
+  }
   .descripcionIndex .descripcionIndex__h3 {
     font-size: 2rem;
     text-align: center;
@@ -1005,6 +1009,9 @@
     margin-bottom: 2rem;
     -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
+  }
+  .sobreMi .sobreMi__img {
+    width: 50%;
   }
   .sobreMi__p {
     font-size: 1.4rem;
