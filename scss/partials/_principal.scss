@@ -190,3 +190,86 @@
 #floatingTextarea{
     height: 300px;
 }
+
+
+//Tests
+main{
+    margin: 4rem;
+}
+.desplegable{
+    font-family: $fuenteHeavy;
+    font-size: 1.4rem;
+    color: $colorAzul;
+    .dropdown-toggle{
+        color: $colorVerde;
+        font-family: $fuenteNegrita;
+        font-size: 1.4rem;
+    }
+    .dropdown-menu{
+        color: $colorVerde;
+        font-family: $fuenteNegrita;
+        font-size: 1.4rem;
+    }
+}
+.test-page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    .test-page-article{
+        color: $colorAzul;
+        font-family: $fuenteNegrita;
+        .test-page-article__header{
+            border-bottom: 2px solid black;
+            margin-bottom: 1rem;
+            padding-bottom:1rem;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            .stats{
+                text-align: left;
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+        .test-page-article__content{
+            display: flex;
+            flex-direction: column;
+            .info-text span{
+                font-family: $fuenteNegrita;
+            }
+           
+            .text-description{
+                line-height: 2.5rem;
+                padding: 1rem;
+                width: 100%;
+            }
+            .card-options{
+                width: 60%;
+                display: flex;
+                align-items: center;
+
+            }
+            .exercise{
+                display: flex;
+                margin-top: 2rem;
+            }
+            .options{
+                display: flex;
+                justify-content: flex-start;
+            }
+            .answers{
+                display: flex;
+                flex-direction: column;
+                margin-left: 1rem;
+                .form-select{
+                    min-width: 7rem;
+                    background-color: white;
+                    width: auto;
+                    display: inline-block;
+                    margin-bottom: 3px;
+                }
+            }
+        }
+    }
+}
